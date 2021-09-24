@@ -1,0 +1,27 @@
+.home-app-container  {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.car-img  {
+    width: 350px;
+}
+.heading  {
+    font-family: "Roboto";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+}
+.description  {
+    font-family: "Roboto";
+    font-size: 18px;
+    font-style: normal;
+    color: black;
+    margin-top: 10px;
+    max-width: 70%;
+}
