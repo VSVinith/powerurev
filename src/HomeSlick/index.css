@@ -1,0 +1,94 @@
+.slider-container {
+    margin: 0px;
+    width: 100vw;
+    /* height: 80vh; */
+    box-sizing: border-box;
+}
+slides .slick-prev,
+.slides .slick-next {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}
+
+
+.slides {
+  position: relative;
+}
+
+.slides .slick-prev,
+.slides .slick-next {
+  position: absolute;
+  top: 50%;
+  z-index:1;
+}
+
+.slides .slick-prev {
+  left: 5%;
+}
+
+.slides .slick-next {
+  right: 5%;
+}
+.first-slide  {
+    /* background-image: url(""); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    /* background-size: cover; */
+    /* padding: 160px; */
+}
+.title  {
+    background-color: cornsilk;
+    line-height: 1.5;
+    font-size: 24px;
+    color: black;
+    font-family: "Roboto";
+    font-weight: 700;
+    border-width: 0px;
+    padding: 20px;
+    text-align: center;
+    max-width: 70%;
+}
+.detail  {
+    background-color: black;
+    line-height: 1.5;
+    font-size: 24px;
+    color: White;
+    font-family: "Roboto";
+    font-weight: 700;
+    border-width: 0px;
+    padding: 20px;
+}
+.second-slide  {
+    /* background-image: url("https://etimg.etb2bimg.com/photo/86229255.cms"); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    /* background-size: cover; */
+    /* padding: 60px; */
+}
+.third-slide  {
+    /* background-image: url("https://inc42.com/wp-content/uploads/2019/12/rsz_shutterstock_735265675.jpg"); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    /* background-size: cover; */
+    /* padding: 60px; */
+}
+.fourth-slide  {
+    /* background-image: url("https://indbiz.gov.in/wp-content/uploads/2019/03/India-aims-to-become-a-global-leader-in-EVs.jpg"); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    /* background-size: cover; */
+    /* padding: 60px; */
+}

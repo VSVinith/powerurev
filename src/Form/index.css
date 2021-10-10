@@ -1,8 +1,25 @@
 .form-app-container  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
+    position: fixed;
+    bottom: 300px;
+    right: -50px; 
+    margin: 0px;
+}
+#rotate{
+  vertical-align:bottom;
+	transform:rotate(7deg);
+  -ms-transform:rotate(-90deg); /* IE 9 */
+  -moz-transform:rotate(-90deg); /* Firefox */
+  -webkit-transform:rotate(-90deg); /* Safari and Chrome */
+  -o-transform:rotate(-90deg); /* Opera */
+}
+.form-button  {
+  color: #ffffff;
+  background-color: maroon;
+  padding: 10px;
+  font-family: "Roboto";
+  font-size: 20px;
+  border-radius: 2px;
+  border-width:0px;
 }
 .form-header-container  {
     display: flex;
@@ -67,5 +84,5 @@
     outline: none;
   }
   .form-icon  {
-      font-size: 60px;
+      font-size: 36px;
   }

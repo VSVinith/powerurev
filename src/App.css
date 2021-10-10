@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+
 
 .App-logo {
   height: 40vmin;
@@ -38,4 +36,7 @@
 }
 .navbar-style {
   position: fixed;
+}
+.navbar-nav-items {
+  margin-left: auto;
 }

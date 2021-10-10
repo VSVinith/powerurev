@@ -1,0 +1,17 @@
+.feedback {
+    background-color : #4dc247;
+    color: white;
+    margin: 20px;
+    padding: 10px;
+    border-width: 0px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: -4px;
+    right: 10px;
+  }
+  .icon  {
+      font-size: 28px;
+  }
+  
