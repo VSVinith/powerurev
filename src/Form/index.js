@@ -1,7 +1,8 @@
 import {Component} from 'react'
 import {Modal} from 'react-bootstrap';
-import {GrClose} from 'react-icons/gr'
-import {AiOutlineForm} from 'react-icons/ai'
+import {GrClose} from 'react-icons/gr';
+import {AiOutlineForm} from 'react-icons/ai';
+import axios from 'axios';
 import './index.css'
 class Form extends Component  {
     state = {
@@ -38,24 +39,29 @@ class Form extends Component  {
         this.setState({addressValue: event.target.value});
     }
     submitForm = async event => {
-        const {nameValue, numberValue, VehicleType,modelValue,addressValue} = this.state;
-        console.log(nameValue);
-        console.log(numberValue);
-        console.log(VehicleType);
-        console.log(modelValue);
-        console.log(addressValue);
+        const {nameValue, numberValue,emailValue, VehicleType,modelValue,addressValue} = this.state;
+        //console.log(nameValue);
+        //console.log(numberValue);
+        // console.log(VehicleType);
+        // console.log(modelValue);
+        // console.log(addressValue);
+        //console.log(this.state);
+        event.preventDefault();
+        //console.log("insert into PowerUrEV.dbo.userData values('"+nameValue+"','',"+numberValue+",'"+addressValue+"')");
         //const formDetails={nameValue, numberValue, VehicleType,modelValue,addressValue}
         //const formDetails={nameValue:this.nameValue, numberValue:this.numberValue}//, VehicleType,modelValue,addressValue}
         //const url="https://apis.ccbp.in/login";
-        const url='https://localhost:5000/test'
-        const options={
-            method:'GET',
-            //body:JSON.stringify(formDetails),
-            }
-        const response=await fetch(url,options);
-        console.log(response);
-        //const data=
-        event.preventDefault();
+        const url='http://localhost:5000/FormData'
+        axios.post(url,this.state).then((response)=>console.log(response)).catch(err=>console.log(err));
+        axios.post('http://localhost:5000/sendMail',this.state).then((response)=>console.log(response)).catch(err=>console.log(err));
+        // const options={
+        //     method:'GET',
+        //     //body:JSON.stringify(formDetails),
+        //     }
+        // const response=await fetch(url,options);
+        // console.log(response);
+        // //const data=
+        
         this.setState({nameValue: ""});
         this.setState({numberValue: ""});
         this.setState({VehicleType: ""});
