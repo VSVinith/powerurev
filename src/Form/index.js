@@ -10,6 +10,8 @@ class Form extends Component  {
         numberValue:"",
         VehicleType: "",
         emailValue: "",
+        modelValue:"",
+        addressValue:"",
     }
     onClickForm = () => {
         this.setState(prevState => ({show: !prevState.show}))
@@ -29,16 +31,40 @@ class Form extends Component  {
     handleEmail = event => {
         this.setState({emailValue: event.target.value});
     }
-    submitForm = event => {
-        // const {nameValue, numberValue, VehicleType} = this.state;
-        // console.log(nameValue);
-        // console.log(numberValue);
-        // console.log(VehicleType);
+    handleModel = event => {
+        this.setState({modelValue: event.target.value});
+    }
+    handleAddress = event => {
+        this.setState({addressValue: event.target.value});
+    }
+    submitForm = async event => {
+        const {nameValue, numberValue, VehicleType,modelValue,addressValue} = this.state;
+        console.log(nameValue);
+        console.log(numberValue);
+        console.log(VehicleType);
+        console.log(modelValue);
+        console.log(addressValue);
+        //const formDetails={nameValue, numberValue, VehicleType,modelValue,addressValue}
+        //const formDetails={nameValue:this.nameValue, numberValue:this.numberValue}//, VehicleType,modelValue,addressValue}
+        //const url="https://apis.ccbp.in/login";
+        const url='https://localhost:5000/test'
+        const options={
+            method:'GET',
+            //body:JSON.stringify(formDetails),
+            }
+        const response=await fetch(url,options);
+        console.log(response);
+        //const data=
         event.preventDefault();
         this.setState({nameValue: ""});
+        this.setState({numberValue: ""});
+        this.setState({VehicleType: ""});
+        this.setState({emailValue: ""});
+        this.setState({modelValue: ""});
+        this.setState({addressValue: ""});
     }
     render()  {
-        const {show, nameValue, numberValue, VehicleType, emailValue} = this.state
+        const {show, nameValue, numberValue, VehicleType, emailValue,modelValue,addressValue} = this.state
         return (
             <div>
             <div className="form-app-container" id="rotate">
@@ -91,7 +117,7 @@ class Form extends Component  {
                 </div>
                 <div className="input-container">
                     <label htmlFor="vehicletype"className="input-label" >VEHICLE TYPE</label>
-                    <select id="vehicletype" className="username-input-field" onChange={this.handleVehicleType} value={VehicleType}>
+                    <select id="vehicletype" className="username-input-field" placeholder="Select Vehilce Type" onChange={this.handleVehicleType} value={VehicleType}>
                         <option value="car">Car</option>
                         <option value="bike">Bike</option>
                         <option value="ebicycle">E-Bicycle</option>
@@ -106,6 +132,8 @@ class Form extends Component  {
                    id="model"
                    className="username-input-field"
                    placeholder="Enter your vehicle model"
+                   onChange={this.handleModel}
+                   value={modelValue}
                 />
                 </div>
                 <div className="input-container">
@@ -117,6 +145,8 @@ class Form extends Component  {
                    id="address"
                    className="username-input-field"
                    placeholder="Enter your address"
+                   onChange={this.handleAddress}
+                   value={addressValue}
                 />
                 </div>
                 <button className="submit-btn" type="submit">Submit</button>
