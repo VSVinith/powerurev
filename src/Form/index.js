@@ -39,7 +39,7 @@ class Form extends Component  {
         this.setState({addressValue: event.target.value});
     }
     submitForm = async event => {
-        const {nameValue, numberValue,emailValue, VehicleType,modelValue,addressValue} = this.state;
+        // const {nameValue, numberValue,emailValue, VehicleType,modelValue,addressValue} = this.state;
         //console.log(nameValue);
         //console.log(numberValue);
         // console.log(VehicleType);

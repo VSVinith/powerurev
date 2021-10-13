@@ -1,26 +1,44 @@
-.how-it-works-container  {
-    height: 100vh;
+.how-container{
+    /* background-color: #333232; */
+    border-radius: 50px;
+    margin: 50px;
+    padding: 50px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+    flex-direction: column;
+    /* font-family: "bree serif"; */
+    /* color: silver; */
 }
-.car-img  {
-    width: 350px;
+.how-car-img{
+    height: 40vh;
+    width: 60vw;
+    border-radius: 20px;
 }
-.heading  {
-    font-family: "Roboto";
-    font-size: 38px;
-    font-style: normal;
-    font-weight: bold;
-    color: black;
-    margin-top: 10px;
+
+.container-1{
+    display: flex;
 }
-.description  {
-    font-family: "Roboto";
-    font-size: 18px;
-    font-style: normal;
-    color: black;
-    margin-top: 10px;
-    max-width: 70%;
+
+.how-content{
+    margin-right: 50px;
+}
+
+@media all and (max-width: 480px) {
+    .how-container{
+    flex-direction: column;
+    margin: 0px;
+    padding:20px;
+    /* justify-content:center;
+    align-items: center; */
+    /* padding: 0px; */
+    }
+
+    .how-car-img{
+        height: 50vh;
+        width: 100%;
+        order:0
+    }
+
+   .how-content{
+       order:1
+   }
 }

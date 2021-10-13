@@ -1,7 +1,53 @@
-.App {
-    text-align: center;
+.power-navbar{
+  /* position: fixed; */
+  background-color: #242323;
+  margin:0px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  width:100%  ;
+}
+
+.logo {
+    width: 250px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+.nav-list{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+  margin-top: 30px;
+
+}
+
+.list-item{
+  margin: 10px;
+  text-decoration: none;
+  color:silver;
+  font-size: 20px;
+}
+
+.mobile-nav{
+  display: none;
+}
+
+@media screen and (max-width:480px) {
+  .mobile-nav{
+    display: block;
+    padding:0px;
   }
-  .logo  {
-    width: 140px;
-    height: 60px;
+  .power-navbar{
+    display: none;
   }
+  .mobile-nav-padding{
+    padding: 0;
+  }
+  .mobile-nav-container{
+    margin:0;
+    /* background-color: black; */
+  }
+  
+}

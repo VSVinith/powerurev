@@ -1,23 +1,46 @@
-import * as ReactBootStrap from 'react-bootstrap';
+// import * as ReactBootStrap from 'react-bootstrap';
+import { Navbar, NavDropdown, Container } from 'react-bootstrap' //import Nav if u use
 import './index.css'
 
 const Header = () => (
-    <div className="App">
-      <ReactBootStrap.Navbar collapseOnSelect fixed="top" expand="lg" bg="dark" variant="dark">
-  <ReactBootStrap.Container>
-  <ReactBootStrap.Navbar.Brand href="#home"><img alt="logo" className="logo" src="https://i.imgur.com/EXhJR5K.jpeg"/></ReactBootStrap.Navbar.Brand>
-  <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
-  <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
-    <ReactBootStrap.Nav className="navbar-nav-items">
-    <ReactBootStrap.Nav.Link href="#home">Home</ReactBootStrap.Nav.Link>
-      <ReactBootStrap.Nav.Link href="#aboutus">About Us</ReactBootStrap.Nav.Link>
-      <ReactBootStrap.Nav.Link href="#whyus">Why Choose Us</ReactBootStrap.Nav.Link>
-      <ReactBootStrap.Nav.Link href="#howitworks">How it works</ReactBootStrap.Nav.Link>
-    </ReactBootStrap.Nav>
-  </ReactBootStrap.Navbar.Collapse>
-  </ReactBootStrap.Container>
-</ReactBootStrap.Navbar>
-    </div>
+  <>
+      <div className="power-navbar">       
+          <div>
+          <img alt="logo" className="logo" src="https://i.imgur.com/EXhJR5K.jpeg"/>
+          </div>
+          <ul className="">
+          <div className="nav-list">
+          <li><a className="list-item" href="#home">Home</a></li>
+          <li><a className="list-item" href="#aboutus">About Us</a></li>
+          <li><a className="list-item" href="#whyus">Why Choose Us</a></li>
+          <li><a className="list-item" href="#howitworks">How it works</a></li>
+          </div>
+        </ul>
+        
+      </div>
+      <div className="mobile-nav">
+      <Navbar className="mobile-nav-padding" bg="light" expand="lg">
+        <Container className="mobile-nav-container">
+          <Navbar.Brand href="#home"><img alt="logo" className="logo" src="https://i.imgur.com/EXhJR5K.jpeg"/></Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            {/* <Nav className="me-auto">
+              <NavDropdown title="Menu" id="basic-nav-dropdown"> */}
+                <NavDropdown.Item href="#home">Home</NavDropdown.Item>
+                <NavDropdown.Item href="#aboutus">About Us</NavDropdown.Item>
+                <NavDropdown.Item href="#whyus">Why Choose Us</NavDropdown.Item>
+                <NavDropdown.Item href="#howitworks">How it works</NavDropdown.Item>
+                <NavDropdown.Item href="#howitworks">Register</NavDropdown.Item>
+                <NavDropdown.Divider />
+              {/* </NavDropdown> */}
+            {/* </Nav> */}
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+      </div>
+
+</>
+    
 )
 
 export default Header

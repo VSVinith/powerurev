@@ -8,21 +8,23 @@ import Footer from './Footer';
 import Form from './Form';
 import Whatsapp from './Whatsapp';
 import Header from './Header';
+import HomeCarousel from './HomeCarousel';
 // import HomeSlick from './HomeSlick';
 
 function App() {
   return (
-    <>
-    <Header/>
-    {/* <HomeSlick/> */}
-    <Home/>
-    <AboutUs/>
-    <WhyChooseUs/>
-    <HowItWorks/>
-    <Form/>
-    <Whatsapp/>
-    <Footer/>
-    </>
+   
+    <div className="app-conatiner">
+      <Header/>    
+      <HomeCarousel/>
+      <Home/>
+      <AboutUs/>
+      <WhyChooseUs/>
+      <HowItWorks/>      
+      <Form/>
+      <Whatsapp/>
+      <Footer/>
+    </div>  
   );
 }
 

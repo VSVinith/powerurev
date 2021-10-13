@@ -86,3 +86,11 @@
   .form-icon  {
       font-size: 36px;
   }
+
+  @media screen and (max-width:480px) {
+    .form-container{
+    height: 50vh;
+    overflow: auto;
+    /* margin-top: 60px; */
+    }
+  }

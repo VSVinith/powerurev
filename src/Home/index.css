@@ -1,28 +1,40 @@
-.home-app-container  {
-    height: 80vh;
+.home-container{
+    /* background-color: #333232; */
+    border-radius: 50px;
+    margin: 50px;
+    padding: 50px;
     display: flex;
+    flex-direction: row;
+    /* width: 100vw; */
+}
+
+.home-car-img{
+    height: 30vh;
+    width: 40vw;
+    border-radius: 20px;
+}
+
+.content-class{
+    margin-left: 60px;
+    /* color: silver; */
+}
+
+@media all and (max-width: 480px) {
+    .home-container{
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: rgba(245, 255, 250, 0.774);
-}
-.car-img  {
-    width: 350px;
-}
-.heading  {
-    font-family: "Roboto";
-    font-size: 38px;
-    font-style: normal;
-    font-weight: bold;
-    color: black;
-    margin-top: 10px;
-}
-.description  {
-    font-family: "Roboto";
-    font-size: 18px;
-    font-style: normal;
-    color: black;
-    margin-top: 10px;
-    max-width: 70%;
+    margin: 0px;
+    padding:20px;
+    /* justify-content:center;
+    align-items: center; */
+    /* padding: 0px; */
+    }
+
+    .home-car-img{
+        height: 50vh;
+        width: 100%;
+    }
+
+    .content-class{
+        margin: 0;
+    }
 }
