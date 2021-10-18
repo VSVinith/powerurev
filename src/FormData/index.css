@@ -1,0 +1,81 @@
+.form-header-container  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-heading  {
+    font-family: "Bree Serif";
+    font-size: 32px;
+    color: black;
+    font-weight: 600;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+  }
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 50%;
+  }
+@media screen and (max-width: 767px)  {
+    .input-container  {
+        width: 90%;
+    }
+}
+.input-label {
+    margin-bottom: 0px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    color: #01060c;
+  }
+  
+  .username-input-field {
+    font-size: 14px;
+    height: 40px;
+    border: 1px solid #d7dfe9;
+    background-color: #e2e8f0;
+    color: #000408;
+    border-radius: 2px;
+    margin-top: 5px;
+    padding: 8px 16px 8px 16px;
+  }
+  
+  .submit-btn  {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff;
+    height: 40px;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 2px;
+    background-color: #0b69ff;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  @media screen and (max-width: 767px)  {
+      .submit-btn  {
+          width: 90px;
+      }
+  }
+  .form-icon  {
+      font-size: 36px;
+  }
+
+  @media screen and (max-width:480px) {
+    .form-container{
+    height: 50vh;
+    overflow: auto;
+    /* margin-top: 60px; */
+    }
+  }

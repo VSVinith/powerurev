@@ -8,12 +8,13 @@ const Header = () => (
           <div>
           <img alt="logo" className="logo" src="https://i.imgur.com/EXhJR5K.jpeg"/>
           </div>
-          <ul className="">
+          <ul>
           <div className="nav-list">
           <li><a className="list-item" href="#home">Home</a></li>
           <li><a className="list-item" href="#aboutus">About Us</a></li>
           <li><a className="list-item" href="#whyus">Why Choose Us</a></li>
           <li><a className="list-item" href="#howitworks">How it works</a></li>
+          <li><a className="list-item" href="#formdata"><button className="form-btn">Get A Quote</button></a></li>
           </div>
         </ul>
         

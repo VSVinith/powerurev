@@ -6,6 +6,7 @@ import WhyChooseUs from './WhyChooseUs';
 import HowItWorks from './HowItWorks';
 import Footer from './Footer';
 import Form from './Form';
+import FormData from './FormData';
 import Whatsapp from './Whatsapp';
 import Header from './Header';
 import HomeCarousel from './HomeCarousel';
@@ -20,7 +21,8 @@ function App() {
       <Home/>
       <AboutUs/>
       <WhyChooseUs/>
-      <HowItWorks/>      
+      <HowItWorks/> 
+      <FormData/>     
       <Form/>
       <Whatsapp/>
       <Footer/>

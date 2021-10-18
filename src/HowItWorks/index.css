@@ -42,3 +42,33 @@
        order:1
    }
 }
+.list-conatiner {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+.lst-item  {
+    display: flex;
+    width: 40%;
+}
+@media screen and (max-width: 767px)  {
+    .lst-item  {
+        width: 90%;
+    }
+}
+.number-img  {
+    width: 80px;
+}
+@media  screen and (max-width: 767px) {
+    .number-img  {
+        width: 40px;
+        height: 80px;
+    }
+}
+.description  {
+    font-family: "open sans";
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    align-self: center;
+}

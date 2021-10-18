@@ -5,7 +5,7 @@
   padding: 0px;
   display: flex;
   justify-content: space-between;
-  width:100%  ;
+  width: 100%;
 }
 
 .logo {
@@ -19,8 +19,7 @@
   display: flex;
   justify-content: space-between;
   margin-right: 20px;
-  margin-top: 30px;
-
+  margin-top: 25px;
 }
 
 .list-item{
@@ -33,7 +32,16 @@
 .mobile-nav{
   display: none;
 }
+.form-btn  {
+  background-color: #0967d2;
+  color: silver;
+  font-size: 20px;
+  font-family: "Roboto";
+  border-radius: 6px;
+  border-width: 0px;
+  padding: 5px;
 
+}
 @media screen and (max-width:480px) {
   .mobile-nav{
     display: block;
