@@ -42,7 +42,7 @@
   padding: 5px;
 
 }
-@media screen and (max-width:480px) {
+@media screen and (max-width:760px) {
   .mobile-nav{
     display: block;
     padding:0px;
@@ -53,9 +53,11 @@
   .mobile-nav-padding{
     padding: 0;
   }
+  .mobile-list-item{
+    color:silver;
+  }
   .mobile-nav-container{
-    margin:0;
-    /* background-color: black; */
+    padding:0px;
   }
   
 }

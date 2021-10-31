@@ -19,7 +19,7 @@
     /* color: silver; */
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 760px) {
     .home-container{
     flex-direction: column;
     margin: 0px;

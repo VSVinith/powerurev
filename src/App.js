@@ -1,4 +1,6 @@
 import React from 'react'
+// import {Route} from 'react-router-dom'
+
 import './App.css';
 import Home from './Home'
 import AboutUs from './AboutUs'
@@ -18,16 +20,16 @@ function App() {
     <div className="app-conatiner">
       <Header/>    
       <HomeCarousel/>
-      <Home/>
-      <AboutUs/>
-      <WhyChooseUs/>
-      <HowItWorks/> 
+      <Home />
+      <AboutUs />
+      <WhyChooseUs />
+      <HowItWorks />
       <FormData/>     
-      <Form/>
+      <Form />
       <Whatsapp/>
       <Footer/>
     </div>  
-  );
+  )
 }
 
 export default App;

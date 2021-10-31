@@ -9,19 +9,27 @@ const HowItWorks = () =>  (
             <h1 className="">How it works</h1>
             <ul className="list-conatiner">
                <li className="lst-item">
-                   <img className="number-img" src="https://printables.space/files/uploads/download-and-print/large-printable-numbers/1-a4.jpg" alt="num1"/>
+                   <div className="num-card">
+                        <h1 className="number">1</h1>
+                   </div>
                    <p className="description">Fill the form with your basic KYC details</p>
                 </li>
                <li className="lst-item">
-                   <img className="number-img" src="https://www.officenational.com.au/obv9.public/wcsstore/ONCatalogAssetStore/images/900407_1.jpg?w=400&ch=DPR&dpr=2" alt="img2"/>
+                    <div className="num-card">
+                        <h1 className="number">2</h1>
+                    </div>
                    <p className="description">Our representative will get in touch with you</p>
                 </li>
                <li className="lst-item">
-                   <img className="number-img" src="https://lh3.googleusercontent.com/proxy/TOv3qshCNwm3cewjMPGojMbRiBqoSubSpXGJiRgYATGZ1S2Q6gK993r-2FchHdPAtuq81mUXwuPf5t0sTdFish0zcR_ksec" alt="img3"/>
+                    <div className="num-card">
+                        <h1 className="number">3</h1>
+                    </div>
                    <p className="description">Pay 250/- of visiting charges, our technician will reach your location assess the work involved and give you the quotation.</p>
                 </li>
                <li className="lst-item">
-                   <img className="number-img" src="https://printables.space/files/uploads/download-and-print/large-printable-numbers/4-a4-1200x1697.jpg" alt="img4"/>
+                    <div className="num-card">
+                        <h1 className="number">4</h1>
+                    </div>
                    <p className="description">If you are convinced with the quote, we will complete the work in promised hours.</p>
                 </li>
             </ul>

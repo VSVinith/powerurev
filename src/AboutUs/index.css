@@ -44,7 +44,7 @@
     margin-top: 50px;
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 760px) {
     .about-container{
     flex-direction: column;
     margin: 0px;

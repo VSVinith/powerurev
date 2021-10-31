@@ -22,7 +22,20 @@
     margin-right: 50px;
 }
 
-@media all and (max-width: 480px) {
+.number{
+    color: #7a7b7d;
+}
+.num-card{
+    background-color: transparent;
+    border: 2px solid #7a7b7d;
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    height: 100px;
+}
+
+@media all and (max-width: 760px) {
     .how-container{
     flex-direction: column;
     margin: 0px;
@@ -72,3 +85,4 @@
     color: black;
     align-self: center;
 }
+

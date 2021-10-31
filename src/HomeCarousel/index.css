@@ -35,9 +35,9 @@
 
 }
 
-.carousel-container{
+/* .carousel-container{
     margin: 20px;
-}
+} */
 
 @media all and (max-width: 480px) {
     .carousel-image{
