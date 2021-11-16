@@ -5,21 +5,34 @@
     padding: 50px;
     display: flex;
     flex-direction: column;
+    /* justify-content: space-between; */
     /* color: silver; */
 }
 .why-car-img{
-    height: 200px;
-    width: 60vw;
+    height: 300px;
+    width: 500px;
+    margin-right: 60px;
     border-radius: 20px;
     order:1;
 }
 .why-content{
-    order:0;
+    order:2;
 }
 .container-1{
     display: flex;
 }
-
+.wcu-heading  {
+    font-family: "Lucy Rose";
+    font-weight: 700;
+    color: black;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.wcu-description  {
+    font-family: "Roboto";
+    font-size: 18px;
+    color: black;
+}
 @media all and (max-width: 760px) {
     .why-container{
     flex-direction: column;
@@ -40,3 +53,4 @@
        order:1
    }
 }
+

@@ -3,21 +3,20 @@ import { Navbar, NavDropdown, Container } from 'react-bootstrap' //import Nav if
 import './index.css'
 
 const Header = () => (
-  <>
+  <>  <div className="navbar">
       <div className="power-navbar">       
           <div>
           <img alt="logo" className="logo" src="https://i.imgur.com/EXhJR5K.jpeg"/>
           </div>
-          <ul>
-          <div className="nav-list">
-          <li><a className="list-item" href="#home">Home</a></li>
-          <li><a className="list-item" href="#aboutus">About Us</a></li>
-          <li><a className="list-item" href="#whyus">Why Choose Us</a></li>
-          <li><a className="list-item" href="#howitworks">How it works</a></li>
-          <li><a className="list-item" href="#formdata"><button className="form-btn">Get A Quote</button></a></li>
-          </div>
+          <ul className="nav-list nav-list-1">
+          <li className="list-item-1"><a className="list-item" href="#home">Home</a></li>
+          <li className="list-item-1"><a className="list-item" href="#aboutus">About Us</a></li>
+          <li className="list-item-1"><a className="list-item" href="#whyus">Why Choose Us</a></li>
+          <li className="list-item-1"><a className="list-item" href="#howitworks">How it works</a></li>
+          <li className="list-item-1"><a className="list-item" href="#formdata"><button className="form-btn">Get A Quote</button></a></li>
+  
         </ul>
-        
+      </div>
       </div>
       <div className="mobile-nav">
       <Navbar className="mobile-nav-padding" bg="dark" variant="light" expand="lg">

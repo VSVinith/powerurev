@@ -78,9 +78,15 @@
         height: 80px;
     }
 }
-.description  {
-    font-family: "open sans";
-    font-size: 20px;
+.heading-hw  {
+    font-family: "Lucy Rose";
+    font-weight: 700;
+    color: black;
+    font-size: 32px;
+}
+.description-hw  {
+    font-family: "Roboto";
+    font-size: 18px;
     font-weight: 500;
     color: black;
     align-self: center;

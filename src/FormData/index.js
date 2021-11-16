@@ -1,5 +1,6 @@
 import {Component} from 'react'
 import axios from 'axios';
+// import {AiFillPhone} from 'react-icons/ai'
 import './index.css'
 const initialState = {
         nameValue: "",
@@ -7,11 +8,13 @@ const initialState = {
         VehicleType: "",
         emailValue: "",
         modelValue:"",
+        propertyType:"",
         addressValue:"",
         nameError:"",
         numberError:"",
         emailError:"",
         modelError:"",
+        agree: false,
 }
 class FormData extends Component  {
     state = initialState;
@@ -38,6 +41,15 @@ class FormData extends Component  {
     }
     handleAddress = event => {
         this.setState({addressValue: event.target.value});
+    }
+    handlePropertyType = event => {
+        this.setState({propertyType: event.target.value});
+    }
+    checkboxHandler = () => {
+        //const {agree} = this.state
+        this.setState(prevState => ({
+            agree: !prevState.agree,
+        }))
     }
     validate = () => {
        let nameError = "";
@@ -67,20 +79,9 @@ class FormData extends Component  {
     }
     submitForm = async event => {
         //  const {nameValue, numberValue,emailValue, VehicleType,modelValue,addressValue} = this.state;
-        // console.log(nameValue);
-        // console.log(numberValue);
-        // console.log(emailValue);
-        //  console.log(VehicleType);
-        //  console.log(modelValue);
-        //  console.log(addressValue);
-        //console.log(this.state);
         event.preventDefault();
         const isValid = this.validate();
         if (isValid) {
-        //console.log("insert into PowerUrEV.dbo.userData values('"+nameValue+"','',"+numberValue+",'"+addressValue+"')");
-        //const formDetails={nameValue, numberValue, VehicleType,modelValue,addressValue}
-        //const formDetails={nameValue:this.nameValue, numberValue:this.numberValue}//, VehicleType,modelValue,addressValue}
-        //const url="https://apis.ccbp.in/login";
         const url='http://localhost:5000/FormData'
         axios.post(url,this.state).then((response)=>console.log(response)).catch(err=>console.log(err));
         axios.post('http://localhost:5000/sendMail',this.state).then((response)=>console.log(response)).catch(err=>console.log(err));
@@ -95,7 +96,7 @@ class FormData extends Component  {
         }
     }
     render()  {
-        const {nameValue, numberValue, VehicleType, emailValue,modelValue,addressValue} = this.state
+        const {nameValue, numberValue, VehicleType, emailValue,modelValue,addressValue, propertyType, agree} = this.state
         return (
             <div id="formdata">
                 <div className="form-header-container">
@@ -110,6 +111,8 @@ class FormData extends Component  {
                    type="text"
                    id="name"
                    className="username-input-field"
+                  //autoFocus
+                //    required
                    placeholder="Enter your name"
                    onChange={this.handleName}
                    value={nameValue}
@@ -120,9 +123,12 @@ class FormData extends Component  {
                 <label className="input-label" htmlFor="number">
                   NUMBER
                 </label>
+                {/* <AiFillPhone/> */}
                 <input
                    type="text"
                    id="number"
+                   //autoFocus
+                //    required
                    className="username-input-field"
                    placeholder="Enter your mobile number"
                    onChange={this.handleNumber}
@@ -168,6 +174,16 @@ class FormData extends Component  {
                 <div style={{fontSize: 12, color: "red"}}>{this.state.modelError}</div>
                 </div>
                 <div className="input-container">
+                    <label htmlFor="propertytype"className="input-label" >PROPERTY TYPE</label>
+                    <select id="propertytype" className="username-input-field" placeholder="Select Property Type" onChange={this.handlePropertyType} value={propertyType}>
+                        <option value="">--select your property type--</option>
+                        <option value="individual">Individual</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="office">Office Space</option>
+                        <option value="garage">Garage</option>
+                    </select>
+                </div>
+                <div className="input-container">
                 <label className="input-label" htmlFor="address">
                   ADDRESS
                 </label>
@@ -180,7 +196,13 @@ class FormData extends Component  {
                    value={addressValue}
                 />
                 </div>
-                <button className="submit-btn" type="submit">Submit</button>
+                <div className="acceptance-container">
+                  <input className="checkbox-icon" type="checkbox" id="agree" onChange={this.checkboxHandler} />
+                  <label htmlFor="agree" className="acceptance-text"> I accept <span className="span-text">terms and conditions and your privacy policy</span></label>
+                </div>
+                <div className="submit-btn-container">
+                <button disabled={!agree} className="submit-btn" type="submit">Submit</button>
+                </div>
               </form>
             </div>
         )

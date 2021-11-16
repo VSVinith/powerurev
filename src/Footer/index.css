@@ -6,6 +6,14 @@
     justify-content: space-around;
     padding: 25px;
 }
+.first-footer-card  {
+    display: flex;
+    flex-direction: column;
+}
+.company-name-card {
+    display: flex;
+    justify-content: center;
+}
 
 .copyright{
     color:silver;
@@ -13,8 +21,13 @@
 }
 
 .logo-footer  {
-    width: 30px;
+    width: 200px;
+    height: 100px;
     margin: 10px;
+}
+.msme-logo  {
+    width: 200px;
+    height: 140px;
 }
 .address {
     font-size: 16px;
@@ -29,10 +42,14 @@
 .icon  {
     width: 60px;
 }
+.sm-icon  {
+    color: #19d95e;
+}
 .flex-row{
     display: flex;
 }
 .company-name{
+    font-family: "Times New Roman", Times, serif;
     font-size: 18px;
     margin-top: 12px;
 }
@@ -46,5 +63,35 @@
     text-decoration: none;
     margin-top: 15px;
     font-family: "Roboto";
-
 }
+.link:hover  {
+    color: rgb(118,168,0); 
+}
+.icons  {
+    margin-top: 2.3em;
+    display: flex;
+}
+.footer-icon:hover  {
+    cursor: pointer;
+}
+/* .icons .icon  {
+    opacity: 0.7;
+    margin-left: 1.3em;
+    font-size: 1.8em;
+    transition: 0.2s;
+    padding: 0.65em;
+    border-radius: 50%;
+    background: #d4dbe8;
+    display: grid;
+    place-items: center;
+    box-shadow: -11px -11px 25px rgba(255,255,255, 0.35), 11px 13px 25px rgba(165,181,208,0.738227);
+} */
+/* .icons .icon:hover  {
+     opacity: 1;
+     background: #d4dbe8;
+     border-radius: 50%;
+     transform: scale(1.1);
+     mix-blend-mode: normal;
+     box-shadow: -11px -11px 22px rgba(255,255,255, 0.524448), 11px 13px 22px rgba(166, 181, 208, 0.929496),
+                 inset -11px -11px 28px rgba(255,255,255, 0.692936), inset 11px 11px 28px rgba(166,181,208,0.856261);
+} */

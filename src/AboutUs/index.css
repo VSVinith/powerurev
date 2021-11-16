@@ -43,6 +43,17 @@
     display: flex;
     margin-top: 50px;
 }
+.au-heading  {
+    font-family: "Lucy Rose";
+    font-weight: 700;
+    color: black;
+    font-size: 32px;
+}
+.au-description  {
+    font-family: "Roboto";
+    color: black;
+    font-size: 18px;
+}
 
 @media all and (max-width: 760px) {
     .about-container{
