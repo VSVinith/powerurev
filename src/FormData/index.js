@@ -10,6 +10,7 @@ const initialState = {
         modelValue:"",
         propertyType:"",
         addressValue:"",
+        pincodeValue:"",
         nameError:"",
         numberError:"",
         emailError:"",
@@ -41,6 +42,9 @@ class FormData extends Component  {
     }
     handleAddress = event => {
         this.setState({addressValue: event.target.value});
+    }
+    handlePincode = event => {
+        this.setState({pincodeValue: event.target.value});
     }
     handlePropertyType = event => {
         this.setState({propertyType: event.target.value});
@@ -96,7 +100,7 @@ class FormData extends Component  {
         }
     }
     render()  {
-        const {nameValue, numberValue, VehicleType, emailValue,modelValue,addressValue, propertyType, agree} = this.state
+        const {nameValue, numberValue, VehicleType, emailValue,modelValue,addressValue,pincodeValue, propertyType, agree} = this.state
         return (
             <div id="formdata">
                 <div className="form-header-container">
@@ -187,6 +191,32 @@ class FormData extends Component  {
                 <label className="input-label" htmlFor="address">
                   ADDRESS
                 </label>
+                <input
+                   type="text"
+                   id="model"
+                   className="username-input-field"
+                   placeholder="Enter your address"
+                   onChange={this.handleAddress}
+                   value={addressValue}
+                />
+                </div>
+                <div className="input-container">
+                <label className="input-label" htmlFor="pincode">
+                  PIN CODE
+                </label>
+                <input
+                   type="text"
+                   id="model"
+                   className="username-input-field"
+                   placeholder="Pincode"
+                   onChange={this.handlePincode}
+                   value={pincodeValue}
+                />
+                </div>
+                {/* <div className="input-container">
+                <label className="input-label" htmlFor="address">
+                  ADDRESS
+                </label>
                 <textarea
                    type="text"
                    id="address"
@@ -195,7 +225,7 @@ class FormData extends Component  {
                    onChange={this.handleAddress}
                    value={addressValue}
                 />
-                </div>
+                </div> */}
                 <div className="acceptance-container">
                   <input className="checkbox-icon" type="checkbox" id="agree" onChange={this.checkboxHandler} />
                   <label htmlFor="agree" className="acceptance-text"> I accept <span className="span-text">terms and conditions and your privacy policy</span></label>

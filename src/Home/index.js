@@ -20,7 +20,7 @@ const Home = () =>  (
             </div>
             <div>
                 <h1 className="heading-hp">Our Services</h1>
-                <ol class="gradient-list">
+                <ol className="gradient-list">
                     <li>End-to-end service available 24*7 from installation to maintainence.</li>
                     <li>Available for cars, scooters, buses, bikes and bicycles.</li>
                     <li>Adaptable to diverse scenarios: housing apartments, malls, offices, public spaces, etc.</li>
