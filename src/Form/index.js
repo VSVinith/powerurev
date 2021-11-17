@@ -51,9 +51,9 @@ class Form extends Component  {
         //const formDetails={nameValue, numberValue, VehicleType,modelValue,addressValue}
         //const formDetails={nameValue:this.nameValue, numberValue:this.numberValue}//, VehicleType,modelValue,addressValue}
         //const url="https://apis.ccbp.in/login";
-        const url='http://localhost:5000/FormData'
+        const url='https://powerurev.in/api/FormData'
         axios.post(url,this.state).then((response)=>console.log(response)).catch(err=>console.log(err));
-        axios.post('http://localhost:5000/sendMail',this.state).then((response)=>console.log(response)).catch(err=>console.log(err));
+        axios.post('https://powerurev.in/api/sendMail',this.state).then((response)=>console.log(response)).catch(err=>console.log(err));
         // const options={
         //     method:'GET',
         //     //body:JSON.stringify(formDetails),
