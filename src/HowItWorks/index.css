@@ -69,6 +69,9 @@
         width: 90%;
     }
 }
+.lst-right{
+    margin-left: 100px;
+}
 .number-img  {
     width: 80px;
 }

@@ -14,7 +14,7 @@ const HowItWorks = () =>  (
                    </div>
                    <p className="description-hw">Reach out to us by filling a small form with basic KYC details.</p>
                 </li>
-               <li className="lst-item">
+               <li className="lst-item lst-right">
                     <div className="num-card">
                         <h1 className="number">2</h1>
                     </div>
@@ -26,7 +26,7 @@ const HowItWorks = () =>  (
                     </div>
                    <p className="description-hw">Avail a paid-at-location consultation at just Rs. 250/-</p>
                 </li>
-               <li className="lst-item">
+               <li className="lst-item lst-right">
                     <div className="num-card">
                         <h1 className="number">4</h1>
                     </div>

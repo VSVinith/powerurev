@@ -49,6 +49,9 @@
     color: black;
     font-size: 32px;
 }
+.au-font{
+    font-size: 20px;
+}
 .au-description  {
     font-family: "Roboto";
     color: black;
