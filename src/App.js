@@ -50,7 +50,8 @@ function App() {
   return (
    
     <div className="app-conatiner">
-      <Header/>    
+      <Header/>
+      <Form />    
       <HomeCarousel/>
       <Home />
       <AboutUs />
@@ -58,7 +59,7 @@ function App() {
       <HowItWorks />
       <ReviewsCarousel reviewsData={reviewsData}/>
       <FormData/>     
-      <Form />
+      
       <Whatsapp/>
       <Footer/>
     </div>  
