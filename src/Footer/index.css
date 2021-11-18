@@ -18,21 +18,21 @@
     align-items: center;
     padding: 5px;
 }
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .footer-sections-container  {
-    margin-top: 550px;
+    margin-top: 570px;
     width: 100vw;
     }
-}
-@media screen and (max-width:480px) {
+} */
+@media screen and (max-width:768px) {
     .footer-sections-container  {
         display: flex;
         flex-direction: column;
-        margin-top: 580px;
+        margin-top: 600px;
         width: 100vw;
     }
     .msme-logo{
-        display: none;
+        margin-top: 20px;
     }
     .company-name-card {
         margin-left: 10px;
@@ -41,7 +41,7 @@
     .icons-container {
         display: flex;
         flex-direction: column;
-        align-items: start;
+        align-items: flex-start;
         padding: 5px;
     }
     

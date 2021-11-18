@@ -23,7 +23,7 @@ const Header = () => (
       </div>
       <div className="mobile-nav">
       <Navbar className="mobile-nav-padding" bg="dark" variant="light" expand="lg">
-        <Container className="mobile-nav-container">
+        <Container className="mobile-nav-container logo-position">
           <Navbar.Brand href="#home"><img alt="logo" className="logo" src="https://i.imgur.com/EXhJR5K.jpeg"/></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

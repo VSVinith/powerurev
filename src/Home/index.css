@@ -63,7 +63,7 @@
     }
     .li-width{
       margin-right: 20px;
-      width: 90vw;
+      width: 85vw;
     }
 }
 ol.gradient-list > li::before, ol.gradient-list > li {
