@@ -93,6 +93,6 @@
     }
     .form-container{
     height: 50vh;
-    overflow: auto;
+    /* overflow: auto; */
     }
   }
