@@ -110,6 +110,12 @@
     .acceptance-container{
       padding-left: 130px;
     }
+    
+}
+.input-row{
+  display: flex;
+  flex-direction: row;
+  
 }
 .form-icon  {
     font-size: 36px;
@@ -120,5 +126,9 @@
   height: 50vh;
   /* overflow: auto; */
   /* margin-top: 60px; */
+  }
+  .acceptance-container{
+    padding-left: 240px;
+    width: 100vw;
   }
 }

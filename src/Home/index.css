@@ -62,7 +62,8 @@
         /* flex-direction: column; */
     }
     .li-width{
-      width: 92vw;
+      margin-right: 20px;
+      width: 90vw;
     }
 }
 ol.gradient-list > li::before, ol.gradient-list > li {

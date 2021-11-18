@@ -226,7 +226,7 @@ class FormData extends Component  {
                    value={addressValue}
                 />
                 </div> */}
-                <div className="acceptance-container">
+                <div className="input-container input-row">
                   <input className="checkbox-icon" type="checkbox" id="agree" onChange={this.checkboxHandler} />
                   <label htmlFor="agree" className="acceptance-text"> I accept <span className="span-text">terms and conditions and your privacy policy</span></label>
                 </div>

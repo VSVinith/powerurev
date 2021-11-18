@@ -27,7 +27,7 @@ const Footer = () => (
             <img className="msme-logo" alt="msme logo" src="https://i0.wp.com/lamodainstitute.in/wp-content/uploads/2017/11/msme-logo.jpg?ssl=1"/>  
             </div>
             <div className="icons-container">
-                <h5 className="">Follow Us</h5>
+                <h5 className="follow">Follow Us</h5>
                 <div className="icons">
                     <a className="footer-icon" href="https://www.facebook.com/" rel="noreferrer" target="_blank"><FaFacebook className="icon sm-icon"/></a>
                     <a className="footer-icon" href="https://www.instagram.com/accounts/login/" rel="noreferrer" target="_blank"><FaInstagram className="icon sm-icon"/></a>
