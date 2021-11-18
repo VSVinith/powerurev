@@ -21,10 +21,10 @@ const Home = () =>  (
             <div>
                 <h1 className="heading-hp">Our Services</h1>
                 <ol className="gradient-list">
-                    <li>End-to-end service available 24*7 from installation to maintainence.</li>
-                    <li>Available for cars, scooters, buses, bikes and bicycles.</li>
-                    <li>Adaptable to diverse scenarios: housing apartments, malls, offices, public spaces, etc.</li>
-                    <li>Different charging standards to choose from, cause we know one size doesn't fit all.</li>
+                    <li className="li-width">End-to-end service available 24*7 from installation to maintainence.</li>
+                    <li className="li-width">Available for cars, scooters, buses, bikes and bicycles.</li>
+                    <li className="li-width">Adaptable to diverse scenarios: housing apartments, malls, offices, public spaces, etc.</li>
+                    <li className="li-width">Different charging standards to choose from, cause we know one size doesn't fit all.</li>
                 </ol>
             </div>
         </div> 

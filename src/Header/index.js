@@ -7,8 +7,11 @@ const Header = () => (
       <div className="power-navbar">       
           <div>
           <img alt="logo" className="logo" src="https://i.imgur.com/EXhJR5K.jpeg"/>
+          
           </div>
+          <span className="heading-title">PowerUrEV</span>
           <ul className="nav-list nav-list-1">
+          
           <li className="list-item-1"><a className="list-item" href="#home">Home</a></li>
           <li className="list-item-1"><a className="list-item" href="#aboutus">About Us</a></li>
           <li className="list-item-1"><a className="list-item" href="#whyus">Why Choose Us</a></li>

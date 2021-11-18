@@ -56,6 +56,9 @@
     .content-class{
         margin: 0;
     }
+    .li-width{
+      width: 100vw;
+    }
 }
 ol.gradient-list > li::before, ol.gradient-list > li {
     box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
@@ -64,6 +67,9 @@ li  {
     font-size: 20px;
     font-family: "Roboto";
     color: black;
+}
+.li-width{
+  width: 50vw;
 }
 ol.gradient-list {
     counter-reset: gradient-counter;

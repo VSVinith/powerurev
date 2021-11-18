@@ -25,6 +25,12 @@
     height: 90px;
     margin-left: 20px;
 }
+.heading-title{
+  color: white;
+  text-align: center;
+  padding-left: 30px;
+  font-size: 40px;
+}
 
 .nav-list{
   list-style-type: none;
