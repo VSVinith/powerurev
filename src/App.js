@@ -58,8 +58,7 @@ function App() {
       <WhyChooseUs />
       <HowItWorks />
       <ReviewsCarousel reviewsData={reviewsData}/>
-      <FormData/>     
-      
+      <FormData/>      
       <Whatsapp/>
       <Footer/>
     </div>  

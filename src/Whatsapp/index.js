@@ -4,7 +4,7 @@ import {FaWhatsapp} from 'react-icons/fa'
 const Whatsapp = () => (
       <button className="feedback">
           <FaWhatsapp className="icon"/>
-          Message Us
+          <span className="text-class">Message Us</span>
       </button>
 )
 

@@ -64,11 +64,15 @@
     margin: 0px;
     padding:20px;
     justify-content:center;
-    align-items: center;
+    /* align-items: center; */
     /* padding: 0px; */
     }
-
+    .au-heading{
+        margin-bottom: 15px;
+        padding-left: 5px;
+    }
     .container-1{
+        /* margin-top:10px ; */
         display: flex;
         flex-direction: column;
     }

@@ -93,7 +93,19 @@
   padding: 5px;
 
 }
+@media screen and (max-width:998px){
+  .heading-title{
+    display: none;
+    /* color: white;
+    text-align: center; 
+    padding-left: 30px;
+    font-size: 20px; */
+  }
+}
 @media screen and (max-width:760px) {
+  .logo{
+    margin:0px;
+  }
   .mobile-nav{
     display: block;
     padding:0px;
