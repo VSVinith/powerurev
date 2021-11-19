@@ -33,7 +33,7 @@
     font-size: 18px;
     color: black;
 }
-@media all and (max-width: 760px) {
+@media all and (max-width: 768px) {
     .why-container{
     flex-direction: column;
     margin: 0px;
