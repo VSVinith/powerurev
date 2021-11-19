@@ -12,7 +12,9 @@ class Form extends Component  {
         VehicleType: "",
         emailValue: "",
         modelValue:"",
-        addressValue:"",
+        address1Value:"",
+        address2Value:"",
+        landmarkValue:"",
         pincodeValue:"",
     }
     onClickForm = () => {
@@ -36,8 +38,14 @@ class Form extends Component  {
     handleModel = event => {
         this.setState({modelValue: event.target.value});
     }
-    handleAddress = event => {
-        this.setState({addressValue: event.target.value});
+    handleAddress1 = event => {
+        this.setState({address1Value: event.target.value});
+    }
+    handleAddress2 = event => {
+        this.setState({address2Value: event.target.value});
+    }
+    handleLandmark = event => {
+        this.setState({landmarkValue: event.target.value});
     }
     handlePincode = event => {
         this.setState({pincodeValue: event.target.value});
@@ -71,11 +79,13 @@ class Form extends Component  {
         this.setState({VehicleType: ""});
         this.setState({emailValue: ""});
         this.setState({modelValue: ""});
-        this.setState({addressValue: ""});
+        this.setState({address1Value: ""});
+        this.setState({address2Value: ""});
+        this.setState({landmarkValue: ""});
         this.setState({pincodeValue: ""});
     }
     render()  {
-        const {show, nameValue, numberValue, VehicleType, emailValue,modelValue,addressValue,pincodeValue} = this.state
+        const {show, nameValue, numberValue, VehicleType, emailValue,modelValue,address1Value,address2Value,landmarkValue,pincodeValue} = this.state
         return (
             <div>
             <div className="form-app-container" id="rotate">
@@ -148,16 +158,42 @@ class Form extends Component  {
                 />
                 </div>
                 <div className="input-container">
-                <label className="input-label" htmlFor="address">
-                  ADDRESS
+                <label className="input-label" htmlFor="address1">
+                  ADDRESS1
                 </label>
                 <input
                    type="text"
                    id="model"
                    className="username-input-field"
                    placeholder="Enter your address"
-                   onChange={this.handleAddress}
-                   value={addressValue}
+                   onChange={this.handleAddress1}
+                   value={address1Value}
+                />
+                </div>
+                <div className="input-container">
+                <label className="input-label" htmlFor="address2">
+                  ADDRESS2
+                </label>
+                <input
+                   type="text"
+                   id="model"
+                   className="username-input-field"
+                   placeholder="Enter your address"
+                   onChange={this.handleAddress2}
+                   value={address2Value}
+                />
+                </div>
+                <div className="input-container">
+                <label className="input-label" htmlFor="landmark">
+                  LANDMARK
+                </label>
+                <input
+                   type="text"
+                   id="model"
+                   className="username-input-field"
+                   placeholder="Enter your landmark"
+                   onChange={this.handleLandmark}
+                   value={landmarkValue}
                 />
                 </div>
                 <div className="input-container">

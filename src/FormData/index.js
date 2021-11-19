@@ -9,7 +9,9 @@ const initialState = {
         emailValue: "",
         modelValue:"",
         propertyType:"",
-        addressValue:"",
+        address1Value:"",
+        address2Value:"",
+        landmarkValue:"",
         pincodeValue:"",
         nameError:"",
         numberError:"",
@@ -40,8 +42,14 @@ class FormData extends Component  {
     handleModel = event => {
         this.setState({modelValue: event.target.value});
     }
-    handleAddress = event => {
-        this.setState({addressValue: event.target.value});
+    handleAddress1 = event => {
+        this.setState({address1Value: event.target.value});
+    }
+    handleAddress2 = event => {
+        this.setState({address2Value: event.target.value});
+    }
+    handleLandmark = event => {
+        this.setState({landmarkValue: event.target.value});
     }
     handlePincode = event => {
         this.setState({pincodeValue: event.target.value});
@@ -60,6 +68,10 @@ class FormData extends Component  {
        let emailError="";
        let numberError="";
        let modelError="";
+       let address1Error="";
+       let address2Error="";
+       let pincodeError="";
+       
        if (!this.state.nameValue) {
            nameError = "*Name is required";
        }
@@ -75,8 +87,20 @@ class FormData extends Component  {
        if (!this.state.modelValue) {
         modelError = "*Vehicle model is required";
     }
-       if (nameError || emailError || numberError || modelError)  {
-           this.setState({nameError, emailError, numberError, modelError});
+    if (!this.state.address1Value) {
+        address1Error = "*Address is required";
+    }
+    if (!this.state.address2Value) {
+        address2Error = "*Address is required";
+    }
+    if (!this.state.pincodeValue) {
+        pincodeError = "*Pincode is required";
+    }
+    else if (!this.state.pincodeValue.length!==6)  {
+        pincodeError = "*Invalid pincode";
+    }
+       if (nameError || emailError || numberError || modelError || address1Error || address2Error || pincodeError)  {
+           this.setState({nameError, emailError, numberError, modelError,address1Error,address2Error,pincodeError});
            return false;
        }
        return true;
@@ -100,7 +124,7 @@ class FormData extends Component  {
         }
     }
     render()  {
-        const {nameValue, numberValue, VehicleType, emailValue,modelValue,addressValue,pincodeValue, propertyType, agree} = this.state
+        const {nameValue, numberValue, VehicleType, emailValue,modelValue,address1Value,address2Value,landmarkValue,pincodeValue, propertyType, agree} = this.state
         return (
             <div id="formdata">
                 <div className="form-header-container">
@@ -188,16 +212,44 @@ class FormData extends Component  {
                     </select>
                 </div>
                 <div className="input-container">
-                <label className="input-label" htmlFor="address">
-                  ADDRESS
+                <label className="input-label" htmlFor="address1">
+                  ADDRESS1
                 </label>
                 <input
                    type="text"
                    id="model"
                    className="username-input-field"
                    placeholder="Enter your address"
-                   onChange={this.handleAddress}
-                   value={addressValue}
+                   onChange={this.handleAddress1}
+                   value={address1Value}
+                />
+                <div style={{fontSize: 12, color: "red"}}>{this.state.address1Error}</div>
+                </div>
+                <div className="input-container">
+                <label className="input-label" htmlFor="address2">
+                  ADDRESS2
+                </label>
+                <input
+                   type="text"
+                   id="model"
+                   className="username-input-field"
+                   placeholder="Enter your address"
+                   onChange={this.handleAddress2}
+                   value={address2Value}
+                />
+                <div style={{fontSize: 12, color: "red"}}>{this.state.address2Error}</div>
+                </div>
+                <div className="input-container">
+                <label className="input-label" htmlFor="landmark">
+                  LANDMARK
+                </label>
+                <input
+                   type="text"
+                   id="model"
+                   className="username-input-field"
+                   placeholder="Enter your landmark"
+                   onChange={this.handleLandmark}
+                   value={landmarkValue}
                 />
                 </div>
                 <div className="input-container">
@@ -212,6 +264,7 @@ class FormData extends Component  {
                    onChange={this.handlePincode}
                    value={pincodeValue}
                 />
+                <div style={{fontSize: 12, color: "red"}}>{this.state.pincodeError}</div>
                 </div>
                 {/* <div className="input-container">
                 <label className="input-label" htmlFor="address">
