@@ -149,3 +149,28 @@ ol.gradient-list {
   ol.gradient-list > li + li {
     margin-top: 2rem;
   }
+  .electrician-img  {
+    width: 350px;
+    height: 300px;
+    margin-top: 70px;
+  }
+  .our-services-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media screen and (max-width: 767px) {
+      .electrician-img {
+        display: none;
+      }  
+      .electrician-img-mobile  {
+        width: 280px;
+        height:280px;
+        margin: 20px;
+      }  
+  }
+  @media screen and (min-width: 768px) {
+    .electrician-img-mobile  {
+      display: none;
+    }
+  }
+  

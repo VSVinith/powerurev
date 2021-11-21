@@ -1,12 +1,13 @@
 import './index.css'
 // import {Link} from 'react-router-dom'
+import image from '../Assets/ev-logo.png'
 import {FaFacebook, FaInstagram, FaTwitter, FaRegCopyright} from 'react-icons/fa'
 
 const Footer = () => (
         <div className="footer-sections-container">
             <div className="first-footer-card ">
                 <div className="flex-row" >
-                    <img className="logo-footer" alt="footer logo" src="https://i.imgur.com/EXhJR5K.jpeg"/>
+                    <img className="logo-footer" alt="footer logo" src={image}/>
                 </div>
                 <div className="company-name-card">
                 <h1 className="company-name">POWERUREV</h1>
@@ -14,10 +15,10 @@ const Footer = () => (
                 </div>
             </div>
             <div className="links">
-                <a className="link" href="#home">Home </a> 
-                <a className="link" href="#aboutus">About </a> 
-                <a className="link" href="#howitworks">HowItWorks </a> 
-                <a className="link" href="#whyus">WhyChooseUs </a> 
+                <a className="link" href="/#home">Home</a> 
+                <a className="link" href="/#aboutus">About</a> 
+                <a className="link" href="/#howitworks">HowItWorks</a>
+                <a className="link" href="/#whyus">WhyChooseUs</a>
             </div>
             <div className="links">
                 <a className="link" href="privacypolicy">Privacy Policy </a> 

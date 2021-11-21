@@ -1,5 +1,6 @@
 import './index.css'
 import LightSpeed from 'react-reveal/LightSpeed';
+import electrician from '../Assets/Electrician.jpg'
 
 const Home = () =>  (
     <>
@@ -18,14 +19,18 @@ const Home = () =>  (
                 <h1 className="services-title">Having Your Own EV Charging Point Just Got Easy</h1>
                 <p className="description-hp">We bring our EV charging services right to your doorsteps.</p>
             </div>
-            <div>
+            <div className="our-services-container">
+                <div>
                 <h1 className="heading-hp">Our Services</h1>
+                <img className="electrician-img-mobile" alt="technician img" src={electrician}/>
                 <ol className="gradient-list">
                     <li className="li-width">End-to-end service available 24*7 from installation to maintainence.</li>
                     <li className="li-width">Available for cars, scooters, buses, bikes and bicycles.</li>
                     <li className="li-width">Adaptable to diverse scenarios: housing apartments, malls, offices, public spaces, etc.</li>
                     <li className="li-width">Different charging standards to choose from, cause we know one size doesn't fit all.</li>
                 </ol>
+                </div>
+                <img className="electrician-img" alt="technician img" src={electrician}/>
             </div>
         </div> 
     </div>

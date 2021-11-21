@@ -1,5 +1,7 @@
 import { Component } from 'react'
 import axios from 'axios';
+
+
 // import {AiFillPhone} from 'react-icons/ai'
 import './index.css'
 const initialState = {
@@ -26,6 +28,7 @@ const initialState = {
 }
 class FormData extends Component {
     state = initialState;
+    
     onClickForm = () => {
         this.setState(prevState => ({ show: !prevState.show }))
     }
@@ -150,7 +153,7 @@ class FormData extends Component {
     render() {
         const { nameValue, numberValue, VehicleType, emailValue, modelValue, address1Value, address2Value, landmarkValue, pincodeValue, propertyType, agree } = this.state
         return (
-            <div id="formdata">
+            <div id="form">
                 <div className="form-header-container">
                     <h1 className="form-heading">Get A Quote</h1>
                 </div>
@@ -313,6 +316,7 @@ class FormData extends Component {
                         <button disabled={!agree} className="submit-btn" type="submit">Submit</button>
                     </div>
                 </form>
+    
             </div>
         )
     }
