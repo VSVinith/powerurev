@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel'
 import './index.css'
 
 const HomeCarousel = () => (
-    <Carousel className="carousel-container">
+    <Carousel className="carousel-container" id="home">
   <Carousel.Item interval={1000}>
     <img
       className="d-block w-100 carousel-image"

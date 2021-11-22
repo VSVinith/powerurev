@@ -11,7 +11,7 @@ const Header = () => (
           </div>
           <ul className="nav-list nav-list-1">
           
-          <li className="list-item-1"><a className="list-item" href="/#home">Home</a></li>
+          <li className="list-item-1"><a className="list-item" href="/">Home</a></li>
           <li className="list-item-1"><a className="list-item" href="/#aboutus">About Us</a></li>
           <li className="list-item-1"><a className="list-item" href="/#whyus">Why Choose Us</a></li>
           <li className="list-item-1"><a className="list-item" href="/#howitworks">How it works</a></li>
@@ -28,7 +28,7 @@ const Header = () => (
           <Navbar.Collapse id="basic-navbar-nav">
             {/* <Nav className="me-auto">
               <NavDropdown title="Menu" id="basic-nav-dropdown"> */}
-                <NavDropdown.Item className="mobile-list-item" href="/#home">Home</NavDropdown.Item>
+                <NavDropdown.Item className="mobile-list-item" href="/">Home</NavDropdown.Item>
                 <NavDropdown.Item className="mobile-list-item" href="/#aboutus">About Us</NavDropdown.Item>
                 <NavDropdown.Item className="mobile-list-item" href="/#whyus">Why Choose Us</NavDropdown.Item>
                 <NavDropdown.Item className="mobile-list-item" href="/#howitworks">How it works</NavDropdown.Item>

@@ -310,7 +310,8 @@ class FormData extends Component {
                 </div> */}
                     <div className="input-container input-row">
                         <input className="checkbox-icon" type="checkbox" id="agree" value={this.state.agree} checked={this.state.agree} onChange={this.checkboxHandler} />
-                        <label htmlFor="agree" className="acceptance-text"> I accept <span className="span-text">terms and conditions and your privacy policy</span></label>
+                        <label htmlFor="agree" className="acceptance-text"> I accept <span className="span-text"><a href="/t&c">Terms and Conditions</a></span> and your <span className="span-text"><a href="/privacypolicy">Privacy Policy</a></span>
+                        </label>
                     </div>
                     <div className="submit-btn-container">
                         <button disabled={!agree} className="submit-btn" type="submit">Submit</button>

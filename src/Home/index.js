@@ -4,7 +4,7 @@ import electrician from '../Assets/Electrician.jpg'
 
 const Home = () =>  (
     <>
-    <div className="home-container" id="home"> 
+    <div className="home-container"> 
         <div className="home-content">
         <img alt="ev img" className="home-car-img" src="https://techcrunch.com/wp-content/uploads/2020/03/gas-vs-electric.png"/>
         <div className="content-class">
