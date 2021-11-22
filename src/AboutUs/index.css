@@ -1,11 +1,11 @@
 .about-container{
     /* background-color: #333232; */
     border-radius: 50px;
-    margin: 50px;
-    padding: 50px;
-    margin-bottom: 0px;
+    margin: 0px 50px 0px;
+    padding: 90px 50px 0px;
+    /* margin-bottom: 0px;
     padding-top: 120px;
-    padding-bottom: 0px;
+    padding-bottom: 0px; */
     display: flex;
     /* width: 50%; */
     flex-direction: column;
