@@ -2,6 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0px;
+  padding-top: 120px;
+  padding-bottom: 0px;
+    
 }
 .form-heading  {
   font-family: "Bree Serif";
