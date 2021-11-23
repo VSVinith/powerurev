@@ -15,13 +15,13 @@ const Header = () => (
           <li className="list-item-1"><a className="list-item" href="/#aboutus">About Us</a></li>
           <li className="list-item-1"><a className="list-item" href="/#whyus">Why Choose Us</a></li>
           <li className="list-item-1"><a className="list-item" href="/#howitworks">How it works</a></li>
-          <li className="list-item-1"><a className="list-item" href="/#form"><button className="form-btn">Get A Quote</button></a></li>
+          <li className="list-item-1"><a  href="/#form"><button className="form-btn">Get A Quote</button></a></li>
   
         </ul>
       </div>
       </div>
       <div className="mobile-nav">
-      <Navbar className="mobile-nav-padding" bg="dark" variant="light" expand="lg">
+      <Navbar className="mobile-nav-padding" bg="dark" variant="dark" expand="lg">
         <Container className="mobile-nav-container logo-position">
           <Navbar.Brand href="#home"><img alt="logo" className="logo" src={image}/></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

@@ -26,6 +26,7 @@ const initialState = {
     propertyError:"",
     agree: false,
 }
+
 class FormData extends Component {
     state = initialState;
     

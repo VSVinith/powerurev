@@ -11,15 +11,23 @@
     bottom: -4px;
     right: 10px;
   }
-  .icon  {
-      font-size: 28px;
-  }
-  @media screen and (max-width:768px) {
+@media screen and (min-width:768px) {
+    .icon  {
+        font-size: 28px;
+        margin-right: -10px;
+        margin-left:-10px;
+    }
+}
+/* .text-class {
+    margin-left: -10px;
+} */
+  @media screen and (max-width:767px) {
       .text-class{
           display: none;
       }
       .icon{
         width: 30px;
+        margin:0;
       }
   }
   

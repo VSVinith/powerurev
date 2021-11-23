@@ -26,7 +26,7 @@
     font-size: 32px;
 }
 .description-hp  {
-    font-family: "Roboto";
+    font-family: "Arial";
     color: black;
     font-size: 18px;
 }
@@ -41,7 +41,7 @@
     font-weight: 600;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 767px) {
     .home-container{
     flex-direction: column;
     margin: 0px;
@@ -74,12 +74,12 @@ ol.gradient-list > li::before, ol.gradient-list > li {
   }
 li  {
     font-size: 20px;
-    font-family: "Roboto";
+    font-family: "Arial";
     color: black;
 }
-@media screen and (min-width:760px) {
+@media screen and (min-width:768px) {
   .li-width{
-    width: 50vw;
+    width: 60vw;
   }
     
 }

@@ -53,7 +53,7 @@
   color:silver;
   font-size: 20px;
 }
-.list-item::before  {
+.list-item::before {
   position: absolute;
   content:"";
   width: 0;
@@ -77,15 +77,15 @@
 .nav-list-1:hover .list-item  {
   color: rgb(211, 211,211);
 }
-.nav-list-1:hover .list-item:hover {
+.nav-list-1:hover .list-item:hover{
   color: rgb(118,168,0);
 }
 .mobile-nav{
   display: none;
 }
 .form-btn  {
-  background-color: #19d95e;
-  color:  black;
+  background-color: rgb(118,168,0);
+  color: white;
   font-size: 20px;
   font-family: "Roboto";
   border-radius: 6px;

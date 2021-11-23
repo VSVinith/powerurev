@@ -14,11 +14,11 @@
 }
 .form-button  {
   color: #ffffff;
-  background-color: maroon;
+  background-color: rgb(118,168,0);
   padding: 10px;
   font-family: "Roboto";
   font-size: 20px;
-  border-radius: 2px;
+  border-radius: 20px;
   border-width:0px;
 }
 .form-header-container  {
