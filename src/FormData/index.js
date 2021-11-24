@@ -1,6 +1,7 @@
 import { Component } from 'react'
 import axios from 'axios';
-
+import { ToastContainer, toast, Zoom } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 // import {AiFillPhone} from 'react-icons/ai'
 import './index.css'
@@ -130,6 +131,11 @@ class FormData extends Component {
         const isValid = this.validate();
         //console.log(isValid);
         if (isValid) {
+            toast("Submitted successfully! Our team will get back to you in 48 hours!", {
+                className: "custom-toast",
+                draggable: true,
+                position: toast.POSITION.BOTTOM_RIGHT
+            });
             const url = 'https://powerurev.in/api/FormData'
             axios.post(url, this.state)
                 .then((response) => {
@@ -147,6 +153,13 @@ class FormData extends Component {
                 );
                 this.setState(initialState);
                 this.checkboxHandler();  
+        }
+        else {
+            toast("Please fill the form correctly", {
+                 className: "error-toast",
+                 draggable: true,
+                 position:toast.POSITION.BOTTOM_RIGHT
+            });
         }
         
         //this.render();
@@ -316,6 +329,9 @@ class FormData extends Component {
                     </div>
                     <div className="submit-btn-container">
                         <button disabled={!agree} className="submit-btn" type="submit">Submit</button>
+                        <ToastContainer 
+                           draggable={false} transition={Zoom} autoClose={7000} closeOnClick
+                        />
                     </div>
                 </form>
     

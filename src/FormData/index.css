@@ -79,7 +79,7 @@
   width: 120px;
   margin-top: 20px;
   margin-bottom: 2px;
-  background-color: #2083f8;
+  background-color: rgb(118,168,0);
   padding: 10px;
   border-radius: 8px;
   border: none;
@@ -135,4 +135,11 @@
     padding-left: 240px;
     width: 100vw;
   }
+}
+
+.custom-toast {
+  background-color: rgb(118,168,0);
+  color: #ffffff;
+  font-family: "Arial";
+  margin-bottom: 80px;
 }
