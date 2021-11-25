@@ -1,6 +1,6 @@
 import './index.css'
 import LightSpeed from 'react-reveal/LightSpeed';
-import electrician from '../Assets/Electrician.jpg'
+import electrician from '../Assets/Electrician.png'
 
 const Home = () =>  (
     <>
@@ -22,7 +22,7 @@ const Home = () =>  (
             <div className="our-services-container">
                 <div>
                 <h1 className="heading-hp">Our Services</h1>
-                <img className="electrician-img-mobile" alt="technician img" src={electrician}/>
+                {/* <img className="electrician-img-mobile" alt="technician img" src={electrician}/> */}
                 <ol className="gradient-list">
                     <li className="li-width">End-to-end service available 24*7 from installation to maintainence.</li>
                     <li className="li-width">Available for cars, scooters, buses, bikes and bicycles.</li>

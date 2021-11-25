@@ -60,7 +60,7 @@
   background: rgb(118,168,0);
   height: 4px;
   left: 50%;
-  bottom: -8px;
+  bottom: 0px;
   border-radius: 5px;
 }
 .list-item-1:hover .list-item::before {

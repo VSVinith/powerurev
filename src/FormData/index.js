@@ -134,7 +134,7 @@ class FormData extends Component {
             toast("Submitted successfully! Our team will get back to you in 48 hours!", {
                 className: "custom-toast",
                 draggable: true,
-                position: toast.POSITION.BOTTOM_RIGHT
+                position: toast.POSITION.TOP_RIGHT
             });
             const url = 'https://powerurev.in/api/FormData'
             axios.post(url, this.state)
@@ -158,7 +158,7 @@ class FormData extends Component {
             toast("Please fill the form correctly", {
                  className: "error-toast",
                  draggable: true,
-                 position:toast.POSITION.BOTTOM_RIGHT
+                 position:toast.POSITION.TOP_RIGHT
             });
         }
         
