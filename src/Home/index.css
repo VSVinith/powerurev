@@ -153,13 +153,16 @@ ol.gradient-list {
     margin-top: 2rem;
   }
   .electrician-img  {
-    width: 350px;
-    height: 300px;
+    width: 25vw;
+    height: 45vh;
+    border-radius: 20px;
     margin-top: 70px;
+    margin-left: 10px;
   }
   .our-services-container {
     display: flex;
     justify-content: space-between;
+    flex-grow: 1;
   }
   @media screen and (max-width: 767px) {
       .electrician-img {
