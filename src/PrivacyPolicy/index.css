@@ -1,0 +1,21 @@
+.privacy-container {
+    padding: 20px;
+    /* background-color: rgb(253, 250, 239); */
+    /* height: 80vh; */
+}
+.privacy-heading {
+    font-family: "Poppins SemiBold";
+    font-size: 48px;
+    text-align: center;
+    font-weight: bold;
+    
+}
+.privacy-description {
+    /* font-family: "Poppins SemiBold"; */
+    font-family: "Roboto";
+    font-size: 20px;
+    
+}
+h1{
+    font-size: 32px;
+}

@@ -26,10 +26,11 @@ const Testimonials = () => (
     <>
     <h1 className="testimonial-title">Testimonials</h1>
     <p className="test-tagline">What our clients say about us</p>
-<Carousel responsive={responsive}  draggable={false}
+    {/* <div className="testimonials"> */}
+<Carousel className="testimonials" responsive={responsive}  draggable={false}
   showDots={false} infinite={true}
   autoPlaySpeed={1000}
-  keyBoardControl={true} >
+  keyBoardControl={true} >  
   <div className="testimonial-card">
       <p className="test-desc"><FaQuoteLeft className="quote-start"/>One of the best times to get customer feedback is straight after you’ve solved a problem for them.<FaQuoteRight className="quote-end"/></p>
       <div className="stars-container">
@@ -41,7 +42,7 @@ const Testimonials = () => (
       <p className="test-name">Niranjan</p>
       <p className="test-loc">Khairatabad</p>
   </div>
-  <div className="testimonial-card">
+  <div className="testimonial-card ">
       <p className="test-desc"><FaQuoteLeft className="quote-start"/>One of the best times to get customer feedback is straight after you’ve solved a problem for them.<FaQuoteRight className="quote-end"/></p>
       <div className="stars-container">
           <RiStarSFill className="stars"/>
@@ -52,7 +53,7 @@ const Testimonials = () => (
       <p className="test-name">Prashanth</p>
       <p className="test-loc">Bachupally</p>
   </div>
-  <div className="testimonial-card">
+  <div className="testimonial-card testimonials-c3">
       <p className="test-desc"><FaQuoteLeft className="quote-start"/>One of the best times to get customer feedback is straight after you’ve solved a problem for them.<FaQuoteRight className="quote-end"/></p>
       <div className="stars-container">
           <RiStarSFill className="stars"/>
@@ -63,7 +64,7 @@ const Testimonials = () => (
       <p className="test-name">Vinith</p>
       <p className="test-loc">Punjagutta</p>
   </div>
-  <div className="testimonial-card">
+  <div className="testimonial-card testimonials-c3">
       <p className="test-desc"><FaQuoteLeft className="quote-start"/>One of the best times to get customer feedback is straight after you’ve solved a problem for them.<FaQuoteRight className="quote-end"/></p>
       <div className="stars-container">
           <RiStarSFill className="stars"/>
@@ -73,8 +74,9 @@ const Testimonials = () => (
       </div>
       <p className="test-name">Akhil</p>
       <p className="test-loc">Suchitra</p>
-  </div>
+  </div> 
 </Carousel>
+{/* </div> */}
     </>
 )
 
