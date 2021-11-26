@@ -1,0 +1,65 @@
+
+.testimonial-card  {
+    height: 250px;
+    width: 350px;
+    background-color: #19d95e;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+    padding:20px;
+    margin:20px;
+    margin-left:100px;
+}
+@media screen and (max-width: 767px){
+   .testimonial-card  {
+       margin-left: 60px;
+   } 
+   .testimonial-title {
+       font-size: 26px;
+   }  
+}
+.testimonial-title  {
+    font-family: "Poppins SemiBold";
+    text-align: center;
+    font-weight: 700;
+    color: black;
+    font-size: 36px;
+}
+.test-tagline  {
+    font-family: "Poppins SemiBold";
+    text-align: center;
+    font-size: 18px;
+}
+.test-desc  {
+    font-family: "arial";
+    font-style: italic;
+    font-size: 18px;
+    color: black;
+}
+.stars-container {
+    display: inline;
+}
+.test-name {
+    color: black;
+    font-family: "arial";
+    font-weight: 600;
+    font-size: 18px;
+    text-align: right;
+}
+.test-loc  {
+    color: black;
+    font-family: "arial";
+    font-size: 18px;
+    text-align: right;
+}
+.quote-start{
+   margin-right: 10px;
+   color: orange;
+}
+.quote-end {
+    margin-left: 10px;
+    color: orange;
+}
+.stars  {
+    color: orange;
+}

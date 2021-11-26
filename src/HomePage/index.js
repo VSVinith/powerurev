@@ -9,6 +9,7 @@ import Whatsapp from '../Whatsapp';
 import Header from '../Header';
 import HomeCarousel from '../HomeCarousel';
 import ReviewsCarousel from '../ReviewsCarousel';
+import Testimonials from '../Testimonials';
 
 const reviewsData = [
     {
@@ -51,7 +52,8 @@ function HomePage()  {
       <AboutUs />
       <WhyChooseUs />
       <HowItWorks />
-      <ReviewsCarousel reviewsData={reviewsData}/>
+      {/* <ReviewsCarousel reviewsData={reviewsData}/> */}
+      <Testimonials/>
       <FormData/>      
       <Whatsapp/>
       <Footer/>

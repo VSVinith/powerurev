@@ -143,3 +143,9 @@
   font-family: "Arial";
   margin-top: 100px;
 }
+.error-toast {
+  background-color: rgb(168, 6, 0);
+  color: #ffffff;
+  font-family: "Arial";
+  margin-top: 100px;
+}

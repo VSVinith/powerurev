@@ -26,7 +26,7 @@ const TermsAndConditions = () => (
             <p className="t-and-c-description">Powerurev.com has all rights to cancel the project "as-is", and the final decision of providing any refunds "if any" solely holds with Powerurev.com and the customer has no right on this aspect.</p>
             
         </div>
-        {/* <Footer /> */}
+        <Footer />
     </>
 )
 

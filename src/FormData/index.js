@@ -155,7 +155,7 @@ class FormData extends Component {
                 this.checkboxHandler();  
         }
         else {
-            toast("Please fill the form correctly", {
+            toast("Please fill all the fields!", {
                  className: "error-toast",
                  draggable: true,
                  position:toast.POSITION.TOP_RIGHT
