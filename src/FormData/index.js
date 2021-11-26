@@ -256,7 +256,7 @@ class FormData extends Component {
                     </div>
                     <div className="input-container">
                         <label className="input-label" htmlFor="address1">
-                            ADDRESS1
+                            ADDRESS LINE 1
                         </label>
                         <input
                             type="text"
@@ -270,7 +270,7 @@ class FormData extends Component {
                     </div>
                     <div className="input-container">
                         <label className="input-label" htmlFor="address2">
-                            ADDRESS2
+                            ADDRESS LINE 2
                         </label>
                         <input
                             type="text"

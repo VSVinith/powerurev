@@ -9,11 +9,17 @@
     padding:20px;
     margin:20px;
     /* padding-left: 0px; */
-    margin-left:100px;
+    margin-left:80px;
 }
 .testimonials{
     padding: 10px;
     
+}
+.react-multiple-carousel__arrow--left {
+    left: calc(2% + 1px);
+}
+.react-multiple-carousel__arrow--right {
+    right: calc(2% + 1px);
 }
 /* .testimonials-c3{
     margin-left: 40px;
