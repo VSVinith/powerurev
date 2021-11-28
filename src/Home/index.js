@@ -1,12 +1,14 @@
 import './index.css'
 import LightSpeed from 'react-reveal/LightSpeed';
 import electrician from '../Assets/Electrician.png'
+import image1 from '../Assets/Problem_Statement.png'
+
 
 const Home = () =>  (
     <>
     <div className="home-container"> 
         <div className="home-content">
-        <img alt="ev img" className="home-car-img" src="https://techcrunch.com/wp-content/uploads/2020/03/gas-vs-electric.png"/>
+        <img alt="ev img" className="home-car-img" src={image1}/>
         <div className="content-class">
             <LightSpeed left><h1 className="heading-hp">Power Up Your Electric Vehicle</h1></LightSpeed>
             <p className="description-hp">Owning an electric vehicle is becoming easier, but what about charging it?<br/>It is estimated that India's EV market will grow at a compound annual growth rate of more than 35%. In this fast-growing market, the shortage of EV charging is bound to happen.</p>

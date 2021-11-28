@@ -15,9 +15,9 @@
 }
 
 .home-car-img{
-    height: 30vh;
-    width: 40vw;
-    border-radius: 20px;
+    height: 300px;
+    width: 900px;
+    /* border-radius: 20px; */
 }
 .heading-hp  {
     font-family: "Poppins SemiBold";
@@ -31,7 +31,7 @@
     font-size: 18px;
 }
 .content-class{
-    margin-left: 60px;
+    margin-left: 30px;
     /* color: silver; */
 }
 .services-title  {
@@ -41,7 +41,7 @@
     font-weight: 600;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 768px) {
     .home-container{
     flex-direction: column;
     margin: 0px;
@@ -164,7 +164,7 @@ ol.gradient-list {
     justify-content: space-between;
     flex-grow: 1;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
       .electrician-img {
         display: none;
       }  

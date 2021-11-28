@@ -34,7 +34,7 @@
 .wcu-description  {
     font-family: "Arial";
     font-size: 18px;
-    color: rgba(0, 0, 0, 0.808);
+    color: black;
 }
 @media all and (max-width: 768px) {
     .why-container{

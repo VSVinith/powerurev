@@ -2,7 +2,8 @@
 .testimonial-card  {
     height: 250px;
     width: 350px;
-    background-color: #19d95e;
+    /* background-color: #19d95e; */
+    background-color: #9ccd62;
     border-top-left-radius: 32px;
     border-top-right-radius: 32px;
     border-bottom-right-radius: 32px;

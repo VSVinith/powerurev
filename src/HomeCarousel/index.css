@@ -24,8 +24,8 @@
 
 .carousel-image{
     width:100vw;
-    height: 60vh;
-    background-image: url("https://indbiz.gov.in/wp-content/uploads/2019/03/India-aims-to-become-a-global-leader-in-EVs.jpg");
+    height: 65vh;
+    /* background-image: url("https://indbiz.gov.in/wp-content/uploads/2019/03/India-aims-to-become-a-global-leader-in-EVs.jpg"); */
     color: silver;
     font-weight: 600;
     display: flex;
@@ -41,9 +41,11 @@
     margin: 20px;
 } */
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 767px) {
     .carousel-image{
-        height:90vh;
+        height:60vh;
+        background-position: center;
+        background-size: cover;
         
     }
     .carousel-container{

@@ -1,13 +1,17 @@
 // import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import Carousel from 'react-bootstrap/Carousel'
 import './index.css'
+//import banner1 from "../Assets/Banner1.png"
+import banner2 from "../Assets/Banner2.jpg"
+import banner3 from "../Assets/Banner3.png"
+import meter from '../Assets/meter.png'
 
 const HomeCarousel = () => (
     <Carousel className="carousel-container" id="home">
   <Carousel.Item interval={1000}>
     <img
       className="d-block w-100 carousel-image"
-      src="https://indbiz.gov.in/wp-content/uploads/2019/03/India-aims-to-become-a-global-leader-in-EVs.jpg" alt="image1"
+      src={meter} alt="image1"
     />
     <Carousel.Caption>
       <h3>First slide label</h3>
@@ -18,7 +22,7 @@ const HomeCarousel = () => (
   <Carousel.Item interval={1000}>
     <img
       className="d-block w-100 carousel-image"
-      src="https://indbiz.gov.in/wp-content/uploads/2019/03/India-aims-to-become-a-global-leader-in-EVs.jpg" alt="image1"
+      src={banner2} alt="image1"
     />
     <Carousel.Caption>
       <h3>Second slide label</h3>
@@ -28,7 +32,7 @@ const HomeCarousel = () => (
   <Carousel.Item >
     <img
       className="d-block w-100 carousel-image"
-      src="https://indbiz.gov.in/wp-content/uploads/2019/03/India-aims-to-become-a-global-leader-in-EVs.jpg" alt="image1"
+      src={banner3} alt="image1"
     />
     <Carousel.Caption>
       <h3>Third slide label</h3>
