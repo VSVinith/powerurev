@@ -27,11 +27,23 @@
 } */
 @media screen and (max-width: 767px){
    .testimonial-card  {
-       margin-left: 60px;
+       
+       margin-left: 10vw;
+       width: 80vw;
    } 
    .testimonial-title {
        font-size: 26px;
    }  
+   .testimonials{
+    padding-left: 30px;
+    
+}
+.react-multiple-carousel__arrow {
+    /* display: none; */
+    padding: 4px;
+    min-width: 0px;
+    min-height:none ;
+}
 }
 .testimonial-title  {
     font-family: "Poppins SemiBold";

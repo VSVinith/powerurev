@@ -20,17 +20,17 @@ const initialState = {
     numberError: "",
     emailError: "",
     modelError: "",
-    address1Error:"",
-    address2Error:"",
-    pincodeError:"",
-    vehicleError:"",
-    propertyError:"",
+    address1Error: "",
+    address2Error: "",
+    pincodeError: "",
+    vehicleError: "",
+    propertyError: "",
     agree: false,
 }
 
 class FormData extends Component {
     state = initialState;
-    
+
     onClickForm = () => {
         this.setState(prevState => ({ show: !prevState.show }))
     }
@@ -72,7 +72,7 @@ class FormData extends Component {
         // console.log(event);
         // console.log(event.target.value);
         this.setState({
-             agree: !this.state.agree,
+            agree: !this.state.agree,
             //agree:true,
         })
     }
@@ -84,8 +84,8 @@ class FormData extends Component {
         let address1Error = "";
         let address2Error = "";
         let pincodeError = "";
-        let vehicleError="";
-        let propertyError="";
+        let vehicleError = "";
+        let propertyError = "";
         if (!this.state.nameValue) {
             nameError = "*Name is required";
         }
@@ -119,8 +119,8 @@ class FormData extends Component {
         else if (this.state.pincodeValue.length !== 6) {
             pincodeError = "*Invalid pincode";
         }
-        if (nameError || emailError || numberError || modelError || address1Error || address2Error || pincodeError||vehicleError||propertyError) {
-            this.setState({ nameError, emailError, numberError, modelError, address1Error, address2Error, pincodeError,vehicleError,propertyError });
+        if (nameError || emailError || numberError || modelError || address1Error || address2Error || pincodeError || vehicleError || propertyError) {
+            this.setState({ nameError, emailError, numberError, modelError, address1Error, address2Error, pincodeError, vehicleError, propertyError });
             return false;
         }
         return true;
@@ -140,7 +140,7 @@ class FormData extends Component {
             axios.post(url, this.state)
                 .then((response) => {
                     console.log(response);
-                    
+
                 }).catch(err => {
                     console.log(err);
                 });
@@ -151,17 +151,17 @@ class FormData extends Component {
                     console.log(err)
                 }
                 );
-                this.setState(initialState);
-                this.checkboxHandler();  
+            this.setState(initialState);
+            this.checkboxHandler();
         }
         else {
             toast("Please fill all the fields!", {
-                 className: "error-toast",
-                 draggable: true,
-                 position:toast.POSITION.TOP_RIGHT
+                className: "error-toast",
+                draggable: true,
+                position: toast.POSITION.TOP_RIGHT
             });
         }
-        
+
         //this.render();
     }
     render() {
@@ -329,12 +329,12 @@ class FormData extends Component {
                     </div>
                     <div className="submit-btn-container">
                         <button disabled={!agree} className="submit-btn" type="submit">Submit</button>
-                        <ToastContainer 
-                           draggable={false} transition={Zoom} autoClose={7000} closeOnClick
+                        <ToastContainer
+                            draggable={false} transition={Zoom} autoClose={7000} closeOnClick
                         />
                     </div>
                 </form>
-    
+
             </div>
         )
     }

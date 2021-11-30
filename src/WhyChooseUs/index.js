@@ -1,4 +1,5 @@
 import './index.css'
+import electrician from '../Assets/Electrician.png'
 const WhyChooseUs = () =>  (
     <div className="why-container" id="whyus">
         <div>
@@ -11,7 +12,7 @@ const WhyChooseUs = () =>  (
               <p className="wcu-description">Adaptable to different setups and technologies.</p>
               <p className="wcu-description">We provide induction prior to the installment, a user manual for lifelong service, and prompt service to solve all your doubts.</p>
             </div>
-            <img alt="ev img1" className="why-car-img" src="https://afdc.energy.gov/assets/images/fuels/34795_Electricity-20206e2c.jpg"/>    
+            <img alt="ev img1" className="why-car-img" src={electrician}/>    
         </div>
         </div>
     

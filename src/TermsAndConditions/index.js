@@ -24,7 +24,7 @@ const TermsAndConditions = () => (
             <p className="t-and-c-description">Powerurev.com provides a service warranty of one month.</p>
             <p className="t-and-c-description">The customer should not interfere in the procedures and protocols followed by Powerurev.com until and unless there is a serious concern that needs to be brought to our notices, however, we follow all the safety protocols and procedures as per industrial standards</p>
             <p className="t-and-c-description">Powerurev.com has all rights to cancel the project "as-is", and the final decision of providing any refunds "if any" solely holds with Powerurev.com and the customer has no right on this aspect.</p>
-            
+
         </div>
         <Footer />
     </>

@@ -1,13 +1,13 @@
-import {Component} from 'react'
+import { Component } from 'react'
 
 import './index.css'
 
 class ReviewsCarousel extends Component {
-  state = {activeReviewIndex: 0}
+  state = { activeReviewIndex: 0 }
 
   onClickRightArrow = () => {
-    const {activeReviewIndex} = this.state
-    const {reviewsData} = this.props
+    const { activeReviewIndex } = this.state
+    const { reviewsData } = this.props
 
     if (activeReviewIndex < reviewsData.length - 1) {
       this.setState(prevState => ({
@@ -17,7 +17,7 @@ class ReviewsCarousel extends Component {
   }
 
   renderActiveReview = review => {
-    const {imgUrl, username, companyName, description} = review
+    const { imgUrl, username, companyName, description } = review
 
     return (
       <div className="review-container">
@@ -30,7 +30,7 @@ class ReviewsCarousel extends Component {
   }
 
   onClickLeftArrow = () => {
-    const {activeReviewIndex} = this.state
+    const { activeReviewIndex } = this.state
 
     if (activeReviewIndex > 0) {
       this.setState(prevState => ({
@@ -40,8 +40,8 @@ class ReviewsCarousel extends Component {
   }
 
   render() {
-    const {reviewsData} = this.props
-    const {activeReviewIndex} = this.state
+    const { reviewsData } = this.props
+    const { activeReviewIndex } = this.state
     const currentReviewData = reviewsData[activeReviewIndex]
 
     return (

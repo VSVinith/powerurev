@@ -11,22 +11,22 @@ import HomeCarousel from '../HomeCarousel';
 import Testimonials from '../Testimonials';
 
 
-  
-function HomePage()  {
+
+function HomePage() {
     return (
         <div className="app-home-conatiner">
-            <Header/>
-            <Form />    
-            <HomeCarousel/>
-            <Home/>
-      <AboutUs />
-      <WhyChooseUs />
-      <HowItWorks />
-      {/* <ReviewsCarousel reviewsData={reviewsData}/> */}
-      <Testimonials/>
-      <FormData/>      
-      <Whatsapp/>
-      <Footer/>
+            <Header />
+            <Form />
+            <HomeCarousel />
+            <Home />
+            <AboutUs />
+            <WhyChooseUs />
+            <HowItWorks />
+            {/* <ReviewsCarousel reviewsData={reviewsData}/> */}
+            <Testimonials />
+            <FormData />
+            <Whatsapp />
+            <Footer />
         </div>
     )
 }
