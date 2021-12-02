@@ -25,7 +25,7 @@ const Header = () => (
     <div className="mobile-nav">
       <Navbar className="mobile-nav-padding" bg="dark" variant="dark" expand="lg">
         <Container className="mobile-nav-container logo-position">
-          <Navbar.Brand href="#home"><img alt="logo" className="logo" src={image} /></Navbar.Brand>
+          <Navbar.Brand href="/"><img alt="logo" className="logo" src={image} /></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             {/* <Nav className="me-auto">
@@ -34,7 +34,7 @@ const Header = () => (
             <NavDropdown.Item className="mobile-list-item" href="/#aboutus">About Us</NavDropdown.Item>
             <NavDropdown.Item className="mobile-list-item" href="/#whyus">Why Choose Us</NavDropdown.Item>
             <NavDropdown.Item className="mobile-list-item" href="/#howitworks">How it works</NavDropdown.Item>
-            <NavDropdown.Item className="mobile-list-item" href="/#howitworks">Register</NavDropdown.Item>
+            <NavDropdown.Item className="mobile-list-item" href="/#form">Register</NavDropdown.Item>
             <NavDropdown.Divider />
             {/* </NavDropdown> */}
             {/* </Nav> */}

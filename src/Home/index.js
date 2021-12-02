@@ -34,7 +34,7 @@ const Home = () => (
                 </div>
             </div>
             <div>
-                <div>
+                <div className="services-container">
                     <h1 className="services-title">Having Your Own EV Charging Point Just Got Easy</h1>
                     <p className="description-hp">We bring our EV charging services right to your doorsteps.</p>
                 </div>

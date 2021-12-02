@@ -27,7 +27,7 @@
   margin-top: 20px;
   width: 50%;
 }
-@media screen and (max-width: 767px)  {
+@media screen and (max-width: 768px)  {
   .input-container  {
       width: 90%;
   }
@@ -107,7 +107,7 @@
   text-decoration:underline;
 }
 
-@media screen and (max-width: 767px)  {
+@media screen and (max-width: 768px)  {
     .submit-btn  {
         width: 120px;
     }
@@ -124,19 +124,6 @@
 .form-icon  {
     font-size: 36px;
 }
-
-@media screen and (max-width:480px) {
-  .form-container{
-  height: 65vh;
-  /* overflow: auto; */
-  /* margin-top: 60px; */
-  }
-  .acceptance-container{
-    padding-left: 240px;
-    width: 100vw;
-  }
-}
-
 .custom-toast {
   background-color: rgb(118,168,0);
   color: #ffffff;
@@ -148,4 +135,27 @@
   color: #ffffff;
   font-family: "Arial";
   margin-top: 100px;
+}
+@media screen and (max-width:480px) {
+  .form-container{
+  height: 75vh;
+  margin: 0px;
+  padding:20px;
+  /* overflow: auto; */
+  /* margin-top: 60px; */
+  }
+  .acceptance-container{
+    padding-left: 240px;
+    width: 100vw;
+  }
+  .form-header-container {
+    padding-top:20px;
+    margin-bottom: 0px;
+  }
+  .custom-toast {
+    margin-top: 0px;
+  }
+  .error-toast {
+    margin-top: 0px;
+  }
 }

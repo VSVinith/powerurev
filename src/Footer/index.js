@@ -10,12 +10,13 @@ const Footer = () => (
                 <img className="logo-footer" alt="footer logo" src={image} />
             </div>
             <div className="company-name-card">
-                <h1 className="company-name">POWERUREV</h1>
                 <FaRegCopyright className="copyright" />
+                <h1 className="company-name">2021 POWERUREV</h1>
             </div>
+            <h1 className="company-name-rights">All Rights Reserved</h1>
         </div>
         <div className="links">
-            <a className="link" href="/#home">Home</a>
+            <a className="link" href="/">Home</a>
             <a className="link" href="/#aboutus">About</a>
             <a className="link" href="/#howitworks">HowItWorks</a>
             <a className="link" href="/#whyus">WhyChooseUs</a>

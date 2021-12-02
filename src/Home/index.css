@@ -13,11 +13,14 @@
 .home-content  {
     display: flex;
 }
-
+.services-container{
+  margin: 10px;
+  margin-left: 0px;
+}
 .home-car-img{
-    height: 300px;
+    height: 270px;
     width: 900px;
-    /* border-radius: 20px; */
+    border-radius: 20px;
 }
 .heading-hp  {
     font-family: "Poppins SemiBold";

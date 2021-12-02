@@ -1,4 +1,6 @@
-
+.testimonial-title{
+    margin-top: 40px;
+}
 .testimonial-card  {
     height: 250px;
     width: 350px;
@@ -25,25 +27,11 @@
 /* .testimonials-c3{
     margin-left: 40px;
 } */
-@media screen and (max-width: 767px){
-   .testimonial-card  {
-       
-       margin-left: 10vw;
-       width: 80vw;
-   } 
-   .testimonial-title {
-       font-size: 26px;
-   }  
-   .testimonials{
-    padding-left: 30px;
-    
-}
 .react-multiple-carousel__arrow {
     /* display: none; */
     padding: 4px;
     min-width: 0px;
     min-height:none ;
-}
 }
 .testimonial-title  {
     font-family: "Poppins SemiBold";
@@ -90,3 +78,16 @@
 .stars  {
     color: orange;
 }
+@media screen and (max-width: 768px){
+    .testimonial-card  { 
+        margin-left: 10vw;
+        width: 80vw;
+        margin-bottom: 40px;
+    } 
+    .testimonial-title {
+        margin-top: 20px;
+    }  
+    .testimonials{
+     padding-left: 30px;
+    }    
+ }

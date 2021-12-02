@@ -9,7 +9,7 @@
 }
 .company-name-card {
     display: flex;
-    margin-left: 10px;
+    margin-left: 0px;
     /* justify-content: center; */
 }
 .icons-container {
@@ -24,52 +24,20 @@
     width: 100vw;
     }
 } */
-@media screen and (max-width:768px) {
-    .footer-sections-container  {
-        display: flex;
-        flex-direction: column;
-        margin-top: 680px;
-        width: 100vw;
-    }
-    .msme-logo{
-        margin-top: 20px;
-    }
-    .company-name-card {
-        margin-left: 10px;
-        justify-content: left;
-    }
-    .icons-container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 5px;
-    }
-    
-    .follow{
-        margin-top: 30px;
-        margin-left: 10px;
-    }
-    .footer-icon{
-        padding: 10px;
-    }
-}
-
-
 .first-footer-card  {
     display: flex;
     flex-direction: column;
 }
-
-
 .copyright{
     color:silver;
     margin-top: 12px;
 }
 
 .logo-footer  {
-    width: 120px;
-    height: 100px;
+    width: 90px;
+    height: 80px;
     margin: 10px;
+    margin-left: 30px;
 }
 .msme-logo  {
     width: 160px;
@@ -93,6 +61,13 @@
     font-family: "Times New Roman", Times, serif;
     font-size: 18px;
     margin-top: 12px;
+    padding-left: 2px;
+}
+.company-name-rights{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    /* margin-top: 12px; */
+    padding-left: 10px;
 }
 .links{
     display: flex;
@@ -115,6 +90,48 @@
 }
 .footer-icon:hover  {
     cursor: pointer;
+}
+@media screen and (max-width:768px) {
+    .footer-sections-container  {
+        display: flex;
+        flex-direction: column;
+        margin-top: 680px;
+        width: 100vw;
+    }
+    .msme-logo{
+        width: 100px;
+        height: 60px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .company-name-card {
+        margin-left: 10px;
+        justify-content: left;
+    }
+    .icons-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5px;
+    }
+    
+    .follow{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .footer-icon{
+        padding:0px 10px 5px 5px;
+        font-size: 30px;
+    }
+    .logo-footer  {
+        margin-left: 0px;
+    }
+    .company-name{
+        font-size: 14px;
+    }
+    .company-name-rights{
+        font-size: 12px;
+    }
 }
 /* .icons .icon  {
     opacity: 0.7;
