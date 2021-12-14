@@ -1,7 +1,7 @@
 import './index.css'
 import Carousel from 'react-bootstrap/Carousel'
 import LightSpeed from 'react-reveal/LightSpeed';
-import electrician from '../Assets/Electrician.png'
+import electrician from '../Assets/Electrician.jpg'
 import image1 from '../Assets/Problem_Statement.png'
 import meter from '../Assets/meter.png'
 

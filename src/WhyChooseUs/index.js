@@ -1,5 +1,5 @@
 import './index.css'
-import electrician from '../Assets/Electrician.png'
+import electrician from '../Assets/Electrician.jpg'
 const WhyChooseUs = () =>  (
     <div className="why-container" id="whyus">
         <div>
