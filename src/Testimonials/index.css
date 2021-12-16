@@ -50,6 +50,7 @@
     font-style: italic;
     font-size: 18px;
     color: black;
+    height: 150px;
 }
 .stars-container {
     display: inline;
@@ -83,10 +84,14 @@
         margin-left: 10vw;
         width: 80vw;
         margin-bottom: 40px;
+        height: 320px;
     } 
     .testimonial-title {
         margin-top: 20px;
     }  
+    .test-desc  {
+        height: 200px;
+    }
     .testimonials{
      padding-left: 30px;
     }    
