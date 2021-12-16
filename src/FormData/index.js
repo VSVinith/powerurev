@@ -38,10 +38,13 @@ class FormData extends Component {
         this.setState(prevState => ({ show: !prevState.show }))
     }
     handleName = event => {
-        this.setState({ nameValue: event.target.value })
+        this.setState({ nameValue: event.target.value.replace(/[^A-Za-z]/ig, '') }) 
     }
     handleNumber = event => {
-        this.setState({ numberValue: event.target.value })
+        const re = /^[0-9\b]+$/;
+        if (event.target.value === '' || re.test(event.target.value)) {
+            this.setState({ numberValue: event.target.value })
+        }       
     }
     handleVehicleType = event => {
         this.setState({ VehicleType: event.target.value });
@@ -62,7 +65,10 @@ class FormData extends Component {
         this.setState({ landmarkValue: event.target.value });
     }
     handlePincode = event => {
-        this.setState({ pincodeValue: event.target.value });
+        const re = /^[0-9\b]+$/;
+        if (event.target.value === '' || re.test(event.target.value)) {
+            this.setState({ pincodeValue: event.target.value })
+        }       
     }
     handlePropertyType = event => {
         this.setState({ propertyType: event.target.value });
@@ -185,6 +191,8 @@ class FormData extends Component {
                             placeholder="Enter your name"
                             onChange={this.handleName}
                             value={nameValue}
+                            maxLength={20}
+    
                         />
                         <div style={{ fontSize: 12, color: "red" }}>{this.state.nameError}</div>
                     </div>
@@ -201,6 +209,7 @@ class FormData extends Component {
                             className="username-input-field"
                             placeholder="Enter your mobile number"
                             onChange={this.handleNumber}
+                            maxLength={10}
                             value={numberValue}
                         />
                         <div style={{ fontSize: 12, color: "red" }}>{this.state.numberError}</div>
@@ -216,6 +225,7 @@ class FormData extends Component {
                             placeholder="Enter your Email id"
                             onChange={this.handleEmail}
                             value={emailValue}
+                            maxLength={30}
                         />
                         <div style={{ fontSize: 12, color: "red" }}>{this.state.emailError}</div>
                     </div>
@@ -240,6 +250,7 @@ class FormData extends Component {
                             placeholder="Enter your vehicle model"
                             onChange={this.handleModel}
                             value={modelValue}
+                            maxLength={10}
                         />
                         <div style={{ fontSize: 12, color: "red" }}>{this.state.modelError}</div>
                     </div>
@@ -306,6 +317,7 @@ class FormData extends Component {
                             placeholder="Pincode"
                             onChange={this.handlePincode}
                             value={pincodeValue}
+                            maxLength={6}
                         />
                         <div style={{ fontSize: 12, color: "red" }}>{this.state.pincodeError}</div>
                     </div>
