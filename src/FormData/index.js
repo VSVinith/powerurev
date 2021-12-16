@@ -145,16 +145,17 @@ class FormData extends Component {
             const url = 'https://powerurev.in/api/FormData'
             axios.post(url, this.state)
                 .then((response) => {
-                    console.log(response);
+                    // console.log(response);
 
                 }).catch(err => {
-                    console.log(err);
+                    // console.log(err);
                 });
             axios.post('https://powerurev.in/api/sendMail', this.state)
                 .then((response) => {
-                    console.log(response);
+
+                    // console.log(response);
                 }).catch(err => {
-                    console.log(err)
+                    // console.log(err)
                 }
                 );
             this.setState(initialState);

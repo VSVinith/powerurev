@@ -32,46 +32,47 @@ const Testimonials = () => (
       autoPlaySpeed={1000}
       keyBoardControl={true} >
       <div className="testimonial-card">
-        <p className="test-desc"><FaQuoteLeft className="quote-start" />One of the best times to get customer feedback is straight after you’ve solved a problem for them.<FaQuoteRight className="quote-end" /></p>
-        <div className="stars-container">
+        <p className="test-desc"><FaQuoteLeft className="quote-start" />A wonderful experience, from my initial call till installation, everything went so smoothly, I would recommend powerurev to everyone out there without second thought...
+          <FaQuoteRight className="quote-end" /></p>
+        {/* <div className="stars-container">
           <RiStarSFill className="stars" />
           <RiStarSFill className="stars" />
           <RiStarSFill className="stars" />
           <RiStarSFill className="stars" />
-        </div>
+        </div> */}
         <p className="test-name">Niranjan</p>
         <p className="test-loc">Khairatabad</p>
       </div>
       <div className="testimonial-card ">
-        <p className="test-desc"><FaQuoteLeft className="quote-start" />One of the best times to get customer feedback is straight after you’ve solved a problem for them.<FaQuoteRight className="quote-end" /></p>
-        <div className="stars-container">
+        <p className="test-desc"><FaQuoteLeft className="quote-start" />My electric vechile is complimented amazingly by powerurev team's charging installation, they look for customer satisfaction more than profit margins..<FaQuoteRight className="quote-end" /></p>
+        {/* <div className="stars-container">
           <RiStarSFill className="stars" />
           <RiStarSFill className="stars" />
           <RiStarSFill className="stars" />
           <RiStarSFill className="stars" />
-        </div>
+        </div> */}
         <p className="test-name">Prashanth</p>
         <p className="test-loc">Bachupally</p>
       </div>
       <div className="testimonial-card">
-        <p className="test-desc"><FaQuoteLeft className="quote-start" />One of the best times to get customer feedback is straight after you’ve solved a problem for them.<FaQuoteRight className="quote-end" /></p>
-        <div className="stars-container">
+        <p className="test-desc"><FaQuoteLeft className="quote-start" />I actually didn't expect them to be soo good, their customer first approach, affordability and sincerity in working stands out among its peers..keep on going powerurev...<FaQuoteRight className="quote-end" /></p>
+        {/* <div className="stars-container">
           <RiStarSFill className="stars" />
           <RiStarSFill className="stars" />
           <RiStarSFill className="stars" />
           <RiStarSFill className="stars" />
-        </div>
+        </div> */}
         <p className="test-name">Vinith</p>
         <p className="test-loc">Punjagutta</p>
       </div>
       <div className="testimonial-card">
         <p className="test-desc"><FaQuoteLeft className="quote-start" />One of the best times to get customer feedback is straight after you’ve solved a problem for them.<FaQuoteRight className="quote-end" /></p>
-        <div className="stars-container">
+        {/* <div className="stars-container">
           <RiStarSFill className="stars" />
           <RiStarSFill className="stars" />
           <RiStarSFill className="stars" />
           <RiStarSFill className="stars" />
-        </div>
+        </div> */}
         <p className="test-name">Akhil</p>
         <p className="test-loc">Suchitra</p>
       </div>
