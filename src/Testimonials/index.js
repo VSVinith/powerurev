@@ -1,6 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { RiStarSFill } from 'react-icons/ri'
+// import { RiStarSFill } from 'react-icons/ri'
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa'
 import './index.css'
 const responsive = {

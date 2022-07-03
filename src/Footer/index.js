@@ -34,6 +34,7 @@ const Footer = () => (
                 <a className="footer-icon" href="https://www.facebook.com/" rel="noreferrer" target="_blank"><FaFacebook className="icon sm-icon" /></a>
                 <a className="footer-icon" href="https://www.instagram.com/accounts/login/" rel="noreferrer" target="_blank"><FaInstagram className="icon sm-icon" /></a>
                 <a className="footer-icon" href="https://twitter.com/explore" rel="noreferrer" target="_blank"><FaTwitter className="icon sm-icon" /></a>
+                {/* <a className="link button-fixed" href="/"><button>Go to Top</button> </a> */}
             </div>
         </div>
     </div>

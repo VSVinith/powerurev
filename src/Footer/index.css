@@ -6,6 +6,7 @@
     justify-content: space-around;
     padding: 25px;
     width: 100vw;
+    /* position: fixed; */
 }
 .company-name-card {
     display: flex;
@@ -31,6 +32,12 @@
 .copyright{
     color:silver;
     margin-top: 12px;
+}
+
+.button-fixed{
+    position: fixed;
+    bottom: 4px;
+    right: 4px;
 }
 
 .logo-footer  {

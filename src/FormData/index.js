@@ -6,6 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 // import {AiFillPhone} from 'react-icons/ai'
 import './index.css'
 const initialState = {
+    cityvalue: "",
     nameValue: "",
     numberValue: "",
     VehicleType: "",
@@ -172,7 +173,7 @@ class FormData extends Component {
         //this.render();
     }
     render() {
-        const { nameValue, numberValue, VehicleType, emailValue, modelValue, address1Value, address2Value, landmarkValue, pincodeValue, propertyType, agree } = this.state
+        const { nameValue, numberValue, VehicleType, emailValue, cityvalue, modelValue, address1Value, address2Value,  pincodeValue, propertyType, agree } = this.state
         return (
             <div id="form">
                 <div className="form-header-container">
@@ -295,16 +296,19 @@ class FormData extends Component {
                         <div style={{ fontSize: 12, color: "red" }}>{this.state.address2Error}</div>
                     </div>
                     <div className="input-container">
-                        <label className="input-label" htmlFor="landmark">
-                            LANDMARK
+                        
+                    </div>
+                    <div className="input-container">
+                    <label className="input-label" htmlFor="landmark">
+                            CITY
                         </label>
                         <input
                             type="text"
                             id="model"
                             className="username-input-field"
-                            placeholder="Enter your landmark"
+                            placeholder="Enter your City"
                             onChange={this.handleLandmark}
-                            value={landmarkValue}
+                            value={cityvalue}
                         />
                     </div>
                     <div className="input-container">
