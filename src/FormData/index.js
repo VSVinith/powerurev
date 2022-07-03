@@ -169,8 +169,6 @@ class FormData extends Component {
                 position: toast.POSITION.TOP_RIGHT
             });
         }
-
-        //this.render();
     }
     render() {
         const { nameValue, numberValue, VehicleType, emailValue, cityvalue, modelValue, address1Value, address2Value,  pincodeValue, propertyType, agree } = this.state

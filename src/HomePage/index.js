@@ -22,7 +22,6 @@ function HomePage() {
             <AboutUs />
             <WhyChooseUs />
             <HowItWorks />
-            {/* <ReviewsCarousel reviewsData={reviewsData}/> */}
             <Testimonials />
             <FormData />
             <Whatsapp />

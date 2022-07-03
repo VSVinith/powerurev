@@ -25,7 +25,6 @@ const Home = () => (
 
                     </Carousel.Item>
                 </Carousel>
-                {/* <img alt="ev img" className="home-car-img" src={image1}/> */}
                 <div className="content-class">
                     <LightSpeed left><h1 className="heading-hp">Power Up Your Electric Vehicle</h1></LightSpeed>
                     <p className="description-hp">Owning an electric vehicle is becoming easier, but what about charging it?<br />It is estimated that India's EV market will grow at a compound annual growth rate of more than 35%. In this fast-growing market, the shortage of EV charging is bound to happen.</p>
@@ -41,7 +40,6 @@ const Home = () => (
                 <div className="our-services-container">
                     <div>
                         <h1 className="heading-hp">Our Services</h1>
-                        {/* <img className="electrician-img-mobile" alt="technician img" src={electrician}/> */}
                         <ol className="gradient-list">
                             <li className="li-width">End-to-end service available 24*7 from installation to maintainence.</li>
                             <li className="li-width">Available for cars, scooters, buses, bikes and bicycles.</li>

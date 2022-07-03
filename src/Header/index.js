@@ -1,6 +1,4 @@
-// import * as ReactBootStrap from 'react-bootstrap';
 import { Navbar, NavDropdown, Container } from 'react-bootstrap' //import Nav if u use
-// import Link from "react-router-dom"
 import './index.css'
 import image from '../Assets/ev-logo.png'
 
@@ -28,16 +26,12 @@ const Header = () => (
           <Navbar.Brand href="/"><img alt="logo" className="logo" src={image} /></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            {/* <Nav className="me-auto">
-              <NavDropdown title="Menu" id="basic-nav-dropdown"> */}
             <NavDropdown.Item className="mobile-list-item" href="/">Home</NavDropdown.Item>
             <NavDropdown.Item className="mobile-list-item" href="/#aboutus">About Us</NavDropdown.Item>
             <NavDropdown.Item className="mobile-list-item" href="/#whyus">Why Choose Us</NavDropdown.Item>
             <NavDropdown.Item className="mobile-list-item" href="/#howitworks">How it works</NavDropdown.Item>
             <NavDropdown.Item className="mobile-list-item" href="/#form">Register</NavDropdown.Item>
             <NavDropdown.Divider />
-            {/* </NavDropdown> */}
-            {/* </Nav> */}
           </Navbar.Collapse>
         </Container>
       </Navbar>
